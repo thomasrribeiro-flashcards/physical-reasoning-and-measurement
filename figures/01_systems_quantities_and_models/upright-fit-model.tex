@@ -1,0 +1,27 @@
+% flashcards-title: Upright package and opening height model
+% flashcards-desc: A rigid upright package is labeled 29 centimeters high, a rigid opening is labeled 31 centimeters high, and a dashed arrow shows straight passage in a not-to-scale drawing.
+\documentclass[dvisvgm,tikz,border=6pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \fill[white] (-0.25,-0.45) rectangle (10.2,4.05);
+  \node[font=\sffamily\bfseries] at (1.95,3.67) {rigid package};
+  \draw[object, rounded corners=2pt] (0.75,0.15) rectangle (3.15,2.65);
+  \draw[DeckInk, line width=0.8pt] (0.75,2.18) -- (3.15,2.18);
+  \node at (1.95,1.28) {upright};
+  \draw[dimension] (0.38,0.15) -- (0.38,2.65);
+  \node[font=\sffamily\bfseries, text=DeckWarm, fill=white, inner sep=1.5pt, rotate=90] at (0.38,1.40) {$29\,\mathrm{cm}$};
+
+  \draw[motion] (3.50,1.32) -- (5.10,1.32);
+  \node[font=\sffamily\small, text=DeckAccent] at (4.30,1.72) {straight};
+
+  \draw[DeckInk, line width=1.5pt] (5.35,0.15) -- (9.85,0.15);
+  \draw[object] (5.35,3.02) rectangle (9.85,3.45);
+  \draw[DeckInk, line width=1.5pt] (9.42,0.15) -- (9.42,3.02);
+  \node[font=\sffamily\bfseries] at (7.42,3.72) {rigid opening};
+  \draw[dimension] (8.88,0.15) -- (8.88,3.02);
+  \node[font=\sffamily\bfseries, text=DeckWarm, fill=white, inner sep=1.5pt, rotate=90] at (8.88,1.59) {$31\,\mathrm{cm}$};
+
+  \node[font=\sffamily\small, text=DeckMuted] at (5.05,-0.18) {schematic --- not to scale};
+\end{tikzpicture}
+\end{document}

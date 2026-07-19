@@ -1,0 +1,16 @@
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,positioning}
+\definecolor{DeckInk}{HTML}{172A3A}
+\definecolor{DeckAccent}{HTML}{176B87}
+\definecolor{DeckWarm}{HTML}{D97706}
+\definecolor{DeckMuted}{HTML}{667784}
+\definecolor{DeckPaper}{HTML}{F7FAFC}
+\tikzset{
+  every node/.style={font=\sffamily, text=DeckInk},
+  object/.style={draw=DeckInk, line width=1.1pt, fill=DeckPaper},
+  primary/.style={draw=DeckAccent, line width=1.5pt},
+  boundary/.style={draw=DeckAccent, line width=1.5pt, dashed, rounded corners=6pt},
+  guide/.style={draw=DeckMuted, line width=0.9pt, dashed},
+  dimension/.style={{Stealth[length=3.2mm,width=2.2mm]}-{Stealth[length=3.2mm,width=2.2mm]}, draw=DeckWarm, line width=1.2pt},
+  motion/.style={-{Stealth[length=3.5mm,width=2.5mm]}, draw=DeckAccent, line width=1.5pt, dashed},
+}

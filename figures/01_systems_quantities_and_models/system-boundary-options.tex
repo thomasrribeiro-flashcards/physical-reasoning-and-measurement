@@ -1,0 +1,29 @@
+% flashcards-title: Candidate system boundaries around a book and ruler
+% flashcards-desc: Two panels show the same book and ruler. Candidate A encloses only the book with a dashed boundary, while candidate B encloses both the book and ruler.
+\documentclass[dvisvgm,tikz,border=6pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \fill[white] (-0.2,-0.2) rectangle (11.2,3.45);
+
+  \node[font=\sffamily\bfseries] at (2.55,3.08) {Candidate A};
+  \draw[object, rounded corners=2pt] (0.75,0.62) rectangle (3.25,1.56);
+  \draw[DeckInk, line width=0.8pt] (0.92,0.91) -- (3.08,0.91);
+  \node at (2.00,1.18) {book};
+  \draw[object] (3.72,0.45) rectangle (4.15,2.45);
+  \foreach \y in {0.65,0.85,...,2.25} {\draw[DeckMuted, line width=0.55pt] (3.72,\y) -- (3.91,\y);}
+  \node[rotate=90, font=\sffamily\small] at (3.95,1.47) {ruler};
+  \draw[boundary] (0.45,0.35) rectangle (3.48,1.83);
+  \node[font=\sffamily\bfseries, text=DeckAccent, fill=white, inner sep=1.5pt] at (0.56,1.82) {A};
+
+  \node[font=\sffamily\bfseries] at (8.48,3.08) {Candidate B};
+  \draw[object, rounded corners=2pt] (6.68,0.62) rectangle (9.18,1.56);
+  \draw[DeckInk, line width=0.8pt] (6.85,0.91) -- (9.01,0.91);
+  \node at (7.93,1.18) {book};
+  \draw[object] (9.65,0.45) rectangle (10.08,2.45);
+  \foreach \y in {0.65,0.85,...,2.25} {\draw[DeckMuted, line width=0.55pt] (9.65,\y) -- (9.84,\y);}
+  \node[rotate=90, font=\sffamily\small] at (9.88,1.47) {ruler};
+  \draw[boundary] (6.38,0.25) rectangle (10.35,2.70);
+  \node[font=\sffamily\bfseries, text=DeckAccent, fill=white, inner sep=1.5pt] at (6.49,2.69) {B};
+\end{tikzpicture}
+\end{document}
