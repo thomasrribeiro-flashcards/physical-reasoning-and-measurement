@@ -2,7 +2,10 @@
 order = 1
 subject = "physics"
 tags = ["physical-reasoning", "systems", "quantities", "measurement", "models"]
-prerequisites = []
+prerequisites = [
+  "concept:mathematics/quantitative-reasoning-and-arithmetic#measurement-unit",
+  "concept:mathematics/quantitative-reasoning-and-arithmetic#unit-conversion",
+]
 provides = [
   "system",
   "system-boundary",

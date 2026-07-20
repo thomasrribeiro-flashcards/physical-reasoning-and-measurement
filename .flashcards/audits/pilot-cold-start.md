@@ -15,6 +15,9 @@ unresolved_dependencies: 0
 - Assumed tools: none
 - Allowed domain knowledge: none; all physics terminology is unseen
 - Local inbound chapters: none
+- Exact external providers:
+  `mathematics/quantitative-reasoning-and-arithmetic#10_measurement_estimation_and_decisions`
+  for `measurement-unit` and `unit-conversion`
 
 The staged schema-2 graph is the executable learner contract for this isolated
 run. The staged algebra deck has no scheduled cards, so the pilot does not rely
@@ -23,7 +26,9 @@ limited to scheduled arithmetic capabilities: whole-number and decimal
 comparison, multiplication, less-than and greater-than signs, number–unit
 measurements, simple unit conversion, and reasonableness checks.
 
-No inbound edge was added. The recommended
+No local inbound edge was added. The qualified external concept edges make the
+previously deck-level unit and conversion assumptions inspectable without
+requiring the learner UI to guess a provider chapter. The recommended
 mathematics/geometry-and-measurement deck remains unavailable and is not
 assumed.
 

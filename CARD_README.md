@@ -26,13 +26,16 @@ transitive arithmetic closure. It does not assume symbolic-function vocabulary.
 
 ## Curriculum and prerequisite decisions
 
-Chapter 1 has no local inbound chapter. It establishes the grammar that every
+Chapter 1 has no local inbound chapter. Its exact external concept edges resolve
+`measurement-unit` and `unit-conversion` to
+`mathematics/quantitative-reasoning-and-arithmetic#10_measurement_estimation_and_decisions`
+through the declared transitive deck closure. It establishes the grammar that every
 later chapter may reuse: question-dependent system boundaries, physical
 quantities and values, measurement targets, purposeful models, assumptions,
 predictions, and tests. A chapter's earlier file number is not treated as an
 edge unless its future frontmatter says so.
 
-Rejected inbound edge: `mathematics/geometry-and-measurement` remains only a
+Rejected hard inbound edge: `mathematics/geometry-and-measurement` remains only a
 recommended deck. Chapter 1 uses simple height comparisons and supplies its own
 diagram grammar, so it does not need that unavailable deck. No unresolved edge
 is proposed.
