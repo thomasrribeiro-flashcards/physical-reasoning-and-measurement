@@ -1,6 +1,7 @@
 +++
 order = 1
 subject = "physics"
+authoring_model = "claude-fable-5"
 tags = ["physical-reasoning", "systems", "quantities", "measurement", "models"]
 prerequisites = [
   "concept:mathematics/quantitative-reasoning-and-arithmetic#measurement-unit",
@@ -23,88 +24,104 @@ provides = [
 
 # Systems, quantities, and models
 
-<!-- card-id: 331c8e40-ad49-4a4d-be8e-278136944105 -->
-Q: To investigate a question, physicists choose a **system**: the part of the physical world being studied, such as an object, collection, or region. An imagined **system boundary** separates it from the **surroundings**, everything outside. If the system is a closed book on a table, is the table part of the system or the surroundings?
-A: The surroundings. The chosen boundary encloses the book but not the table.
+## Choosing a system
 
-<!-- card-id: ae305306-c6bd-4fac-9156-93e61a10417b -->
-Q: Each panel shows the same book and ruler. A dashed loop is a candidate system boundary. For the question “What is the height of the closed book?”, the book is the system and the ruler is **measuring apparatus**, a tool used to make the measurement, outside it.
+<!-- card-id: ed58aef2-6bfd-4839-833b-d601b58b4d03 -->
+Q: To answer a question about the world, physics first picks out which part of the world to study. The chosen object or collection of objects is called the **system**. The imagined dividing line that separates the chosen part from everything else is the **system boundary**, and everything outside the boundary is the **surroundings**. For the question "Will this box fit on the closet shelf?", a sensible system is the box together with the shelf opening. Using these three words, what are the closet walls, the floor, and the other stored objects in this situation?
+A: They are the surroundings. They lie outside the chosen system boundary: only the box and the shelf opening were picked as the system for this question, and everything not chosen is, by definition, the surroundings.
 
-![Candidate A's dashed boundary encloses only the book; candidate B's dashed boundary encloses both the book and ruler.](../figures/01_systems_quantities_and_models/system-boundary-options.svg)
+<!-- card-id: 7b7f1595-7fe8-47ab-b313-fa02686fe787 -->
+Q: A system boundary is drawn by the person asking the question. It is imagined, not built: it does not need to follow any wall or container, it may cut through open air, and it may enclose objects that sit far apart. For the question "How many of the loose books on this desk will fit into that empty box across the room?", explain whether one system may contain both the books and the faraway box.
+A: It may. The system is whatever collection the question needs, so the books and the box can be enclosed by one imagined boundary even though nothing physically surrounds them together. The boundary is a decision made for the question, not a physical object.
 
-Which candidate boundary, A or B, matches that choice?
-A: Boundary A. It encloses the book while leaving the ruler in the surroundings as part of the measuring setup.
+<!-- card-id: 1aa00cc9-be83-48b4-ac3a-fb03a5bf78e3 -->
+Q: In the figure, each dashed loop is a *candidate* system boundary, and the letter beside each loop names that candidate. A book stands on a table, and to the right two shelf boards form an open gap.
 
-<!-- card-id: 92188945-eb15-4616-b861-d027dffe3502 -->
-Q: Why can the system boundary around the same physical objects change when the question changes?
-A: The system is chosen for the question, not discovered as a unique outline. Include the objects needed for the relationship being studied and treat the rest as surroundings.
+![A book stands on a table; to the right, two horizontal shelf boards form an open gap. Dashed loop A encloses only the book. Dashed loop B encloses both the book and the shelf gap.](../figures/01_systems_quantities_and_models/system-boundary-options.svg)
 
-<!-- card-id: 9460348f-15e2-456c-a12d-8d5a80003c21 -->
-Q: A **property** is a feature of an object or event. A **physical quantity** is a property with a comparable size or amount that can be expressed using a number and a reference such as a unit. For one book, which is a physical quantity: its printed title or its height?
-A: Its height. Heights can be compared and expressed with a number and a length unit; the printed title is descriptive but has no greater-or-smaller size or amount.
+The question to answer is: "Will the book fit upright into the gap between the shelf boards?" Which candidate boundary suits this question, and why?
+A: Boundary B. The question compares the book with the shelf gap, so both must be inside the system. Candidate A leaves the gap in the surroundings, and a question cannot be answered from a system that excludes something the comparison needs.
 
-<!-- card-id: 63668add-14c0-4053-b2d6-d6289e30500b -->
-Q: A book's height is a **physical quantity**. A **quantity value** expresses that quantity as a number and a reference, commonly a unit. In “the book's height is \(24\text{ cm}\),” what is the quantity and what is its value?
-A: The quantity is that particular book's height; its expressed value is \(24\text{ cm}\). The number and unit together express the value.
+<!-- card-id: 192d8b16-c489-432a-b225-0abe7dfb22c9 -->
+Q: Two questions are asked about the same book: (1) "Will it fit upright into the shelf gap?" and (2) "Will it lie flat inside the drawer?" The book is identical in both. Explain why the two questions still lead to two different systems.
+A: Each question compares the book with a different second object: the shelf gap for (1), the drawer for (2). A system must contain whatever the question's comparison needs, so changing the question changes which objects are chosen — there is no single "correct" system for an object by itself.
 
-<!-- card-id: bc57cea5-b063-4d46-bfb3-ca52e13f656a -->
-Q: A **measurement** is an experimental process for obtaining a quantity value, usually by comparison with an agreed reference called a **unit**. What makes a ruler reading a measurement rather than an unsupported guess about length?
-A: The ruler provides an experimental comparison with marked length units. The reading comes from that comparison, not from estimation alone.
+## Properties, quantities, and values
 
-<!-- card-id: 8c8d8039-ad8f-49ed-9a61-1d36dd20b61f -->
-Q: The same strip has length \(0.30\text{ m}=30\text{ cm}\). What changed when meters were replaced by centimeters, and what stayed the same?
-A: The unit and numerical value changed; the strip's physical length stayed the same. A smaller unit needs a larger number to express the same quantity.
+<!-- card-id: a3849f0e-637b-4898-9ed3-84faa42daa27 -->
+Q: An object has many **properties** — features such as its color, its shape, its material, and its height. A property that can be compared by size or amount, and reported as a number together with a unit, is called a **physical quantity**. A wooden crate is dark brown and is \(40\text{ cm}\) tall. Which of these two properties is a physical quantity, and why is the other, as stated, not one?
+A: The height. It is reported as a number with a unit (\(40\text{ cm}\)) and can be compared by size with other heights. "Dark brown" is a property but, as stated, not a physical quantity: it describes the crate without any number-and-unit report that would let one crate be browner than another by a stated amount.
 
-<!-- card-id: 6567df8d-355f-41d0-8884-2c3a4c8f686e -->
-Q: The **measurand** is the particular quantity intended to be measured. In the instruction “measure the height of this closed book while it lies flat on the table,” what is the measurand?
-A: The height of that particular closed book while it lies flat on the table. The object, property, and relevant condition make the target specific.
+<!-- card-id: 2655ebe3-a6e0-4bf8-84a6-52d0d49fd695 -->
+Q: A physical quantity and the report used to express it are different things. The crate's height is the quantity — a feature of the crate itself. The **quantity value** \(40\text{ cm}\) is the report of that quantity: a number (\(40\)) together with a unit (the centimeter). If nobody ever measured the crate or wrote anything down, would the crate still have its height?
+A: Yes. The height belongs to the crate whether or not anyone reports it. The quantity value \(40\text{ cm}\) is only an expression of that height — writing it, erasing it, or getting it wrong changes the report, not the crate.
 
-<!-- card-id: ad58e313-35b3-4ec7-bd57-845f0d9c4269 -->
-Q: An **observation** may be descriptive, while a measurement supplies a quantity value. After looking at a lid, a learner records “the lid is open.” After comparing an opening with a ruler, the learner records “the opening is \(18.2\text{ cm}\) high.” Which record is a measurement?
-A: “The opening is \(18.2\text{ cm}\) high.” It reports a measured quantity value; “the lid is open” is a descriptive observation.
+<!-- card-id: 41b502e9-29b2-4edd-8392-6c46428a83dd -->
+Q: The same crate height can be reported as \(40\text{ cm}\) or as \(0.40\text{ m}\), using the exact identity \(1\text{ m}=100\text{ cm}\). Between these two reports, what changed and what stayed the same?
+A: Only the expression changed: a different unit paired with a matching different number. The physical quantity — the crate's actual height — stayed the same. \(40\text{ cm}\) and \(0.40\text{ m}\) are two quantity values for one and the same length.
 
-<!-- card-id: 9329ea57-dfc9-4c2e-8769-50381791815a -->
-Q: A **physical model** is a purposeful, simplified representation of a system. Why can a plain rectangular outline be a useful model of a decorated storage box for an upright-fit question?
-A: It keeps the outer height and width needed to judge fit and omits decorations that do not affect that question. A model is useful for a purpose; it need not copy every detail.
+## Measurement and the measurand
 
-<!-- card-id: 570c3b2f-6325-458e-afbb-7154fa373040 -->
-Q: For a real storage box and a rectangular drawing of it, which is the system and which is the model?
-A: The real box is the physical system being studied; the drawing is a model that represents selected features of it.
+<!-- card-id: 479582d1-cb88-444c-bbda-e1e431e334ec -->
+Q: A **measurement** is an experimental process: an instrument — a tool built to carry the unit's markings, such as a ruler — is brought to the object, the comparison with the unit is actually carried out, and the result is a quantity value. Sara glances at the crate and says "roughly \(40\text{ cm}\)". Tomas stands a ruler beside the crate and reads \(41\text{ cm}\). Which report is a measurement result, and what makes it one?
+A: Tomas's \(41\text{ cm}\). He experimentally compared the crate's height against the centimeter markings of an instrument, so his value comes from a carried-out comparison. Sara's "roughly \(40\text{ cm}\)" is an estimate — often useful, but produced by judgment rather than by performing the comparison.
 
-<!-- card-id: deaf17e2-8247-4753-ac80-c29386a7df4c -->
-Q: An **assumption** is a condition accepted while using a model. A box model treats the top and bottom as flat and the box as **rigid**, meaning it does not bend. What role do those statements play?
-A: They are model assumptions. They state the conditions under which the simplified shape is being used.
+<!-- card-id: 10dd8e1b-b2c6-410b-b66c-9cc757ba5fba -->
+Q: The **measurand** is the particular quantity a measurement is intended to determine, stated precisely enough that everyone would measure the same thing: which object, which property, and under which relevant conditions. A helper is told only "measure the height". The room contains a crate whose lid is standing open. Name one way this instruction fails to specify a measurand.
+A: Any one of these: it does not name the object (the height of *what*?), or the condition (lid open or closed? — with the lid open, the "height" could include the raised lid). A measurand statement such as "the height of the crate, lid closed, from the floor to the top edge" removes those choices.
 
-<!-- card-id: 2c721ff4-1609-4005-b46b-e94d657fb57e -->
-Q: Why can two different models of the same storage box both be useful—one keeping its outer height and width and another keeping its printed markings?
-A: They answer different questions. Outer height and width matter for fit, while printed markings matter for identifying the box; relevance depends on purpose.
+<!-- card-id: c56da2b9-5428-4a3a-8cae-3a2f3c73d2f7 -->
+Q: An **observation** is any record of something noticed about a system; it may be purely descriptive. A measurement is the special kind of observation that produces a quantity value. A notebook holds two entries about the same crate: "taller than the stool beside it" and "height \(41\text{ cm}\), read from a ruler held upright beside it". Both are observations. What does the second entry provide that the first does not?
+A: A quantity value — a number with a unit, obtained by comparison with an instrument's unit markings. The descriptive entry only orders two particular objects; the measured value can be compared with any other height report, rechecked, and used in calculation.
 
-<!-- card-id: e6b842d4-e056-4f37-9cf0-c5e2f6043480 -->
-Q: A **prediction** is an observable or measurable result expected if a model and its assumptions apply. A tray is modeled as \(3\) complete rows with \(4\) slots per row. What slot count does the model predict?
-A: \(12\) slots. The model gives \(3\times4=12\) under the assumption that all three rows are complete.
+## Models and assumptions
 
-<!-- card-id: 34569339-1243-464a-a07e-f63d78b89042 -->
-Q: What makes a physical model testable?
-A: It produces a prediction that can be compared with an observation or measurement. The comparison must be able to disagree with the prediction.
+<!-- card-id: b4b274e7-4c73-40bc-9614-0c34a316c0d2 -->
+Q: To reason about a system, physics replaces it with a **physical model**: a deliberately simplified stand-in that keeps only the features the question needs and ignores the rest. To decide whether the crate fits under a workbench, you draw the crate as a plain rectangle with only its height written beside it — no color, no texture, no contents. What makes this drawing a model rather than a picture meant to look like the crate?
+A: It is built for a purpose. It keeps exactly the feature the fit question needs — the height, as one labeled length — and deliberately leaves everything else out. A picture tries to show how the crate looks; a model tries to make the question easy to answer correctly.
 
-<!-- card-id: 0fc7fae4-0d38-49ed-8580-b8d1bdcdba21 -->
-Q: A tray model predicts \(12\) usable slots, but observation finds \(11\). What is the strongest conclusion from this comparison alone?
-A: The prediction does not match this tray. The mismatch is a reason to examine the model and its assumptions; by itself it does not identify every cause or make all uses of the model worthless.
+<!-- card-id: 3eadac7a-555b-4b88-b4ff-fd90a1e43a01 -->
+Q: A learner studies whether a crate fits under a workbench, using a rectangle drawing labeled "height \(41\text{ cm}\)". In this situation, which thing is the system and which is the model?
+A: The system is the real crate together with the space under the workbench — the chosen part of the world. The model is the labeled rectangle drawing — the simplified stand-in used for reasoning. The drawing can be mistaken, redrawn, or thrown away; the crate itself does not change.
 
-<!-- card-id: 4cc509f7-525a-4eb0-b2c0-e0845f1b0622 -->
-Q: The system for this question includes a rigid package and a rigid opening. The model assumes the package moves straight through while upright and predicts a fit when package height is less than opening height. Double-ended arrows mark the two measured heights. The **schematic** is a simplified drawing, and it is not to scale.
+<!-- card-id: 71da68d5-89e2-4c83-8ff4-97b0a7f68780 -->
+Q: A model rests on **assumptions**: conditions accepted as true while the model is used, without being rechecked each time. The crate-fit model treats the crate as **rigid** — keeping its shape, neither bending nor squashing. Suppose the "crate" is actually a soft fabric storage cube. Which assumption of the fit model does this threaten?
+A: The rigidity assumption. A soft cube can squash or bulge, so its measured unloaded height may not be the height it has while being pushed into place — and then comparing that one fixed value with the opening no longer settles the fit. A model's answer is only trustworthy while its assumptions hold.
 
-![A not-to-scale schematic labels a rigid package height as 29 centimeters and an opening height as 31 centimeters, with an arrow showing straight upright passage.](../figures/01_systems_quantities_and_models/upright-fit-model.svg)
+<!-- card-id: 8399d662-a65a-44dc-b6f0-74aae19e6038 -->
+Q: Whether a detail belongs in a model depends on the question, not on how eye-catching the detail is. A crate has bright warning stickers, and a handle that sticks out \(3\text{ cm}\) from one side. For the question "Will the crate fit sideways through the doorway?", which of these two details must the model keep, and why that one?
+A: The protruding handle. It makes the crate effectively \(3\text{ cm}\) wider on that side, and how wide the crate is at its widest is exactly what the doorway comparison uses. The stickers change only appearance, so this model can ignore them — though for a different question, such as whether a warning will be noticed, the relevant detail would reverse.
 
-What does the model predict?
-A: The package fits straight through while upright because \(29\text{ cm}<31\text{ cm}\). The prediction applies only under the stated rigid, upright, straight-through assumptions.
+## Predictions and tests
 
-<!-- card-id: 6f021415-b7dc-46c9-8ff2-3c22f8ec388c -->
-P: A rigid board is \(42\text{ cm}\) high. It must slide straight and upright through a rigid opening \(40\text{ cm}\) high, without tilting. Use the sequence question → system → quantity → model → prediction → check to decide what the stated model supports.
-S: **IDENTIFY:** The system is the board and opening for the fit question. The relevant quantities are their heights.
+<!-- card-id: dc9e1660-2b5e-4a3d-a60a-86c572935ce9 -->
+Q: A **model prediction** is a definite statement, worked out from the model and its assumptions, of what should be observed or measured in the real system. A shelf model says: the shelf has \(3\) rows of \(4\) jar slots each, every slot holds exactly one jar, and every slot is usable. What does this model predict a careful count will find when the shelf is completely full?
+A: \(12\) jars, because \(3\times4=12\). If the model and its assumptions describe the shelf correctly, a count of the completely filled shelf should find exactly this number.
 
-**PLAN:** Use the stated straight-upright model: the board fits only if its height is less than the opening height.
+<!-- card-id: 20595df8-cf88-4211-846e-9a28216fb4cd -->
+Q: A **model test** compares a prediction with what is actually observed or measured in the system — and the comparison only counts as a test if it could come out either way. You completely fill the real shelf and count the jars. Why is comparing this count with the predicted \(12\) a genuine test of the shelf model?
+A: Because the count comes from the real shelf, independently of the model, and nothing forces it to equal \(12\): a blocked slot or an extra-wide jar would make it differ. Agreement supports the model; disagreement counts against it. A comparison that could never disagree would test nothing.
 
-**EXECUTE:** \(42\text{ cm}>40\text{ cm}\), so the model predicts that the board **does not fit** straight through while upright.
+<!-- card-id: 4247702d-7977-41f4-95e0-4f24ad018b25 -->
+Q: The shelf model predicted \(12\) jars; a careful count of the completely filled shelf finds \(10\). What is the strongest conclusion this mismatch supports on its own?
+A: Only that something in the modeling of this shelf is wrong: at least one assumption fails (perhaps not every slot is usable, or one jar per slot is wrong), or the count itself went wrong. The mismatch by itself does not say *which* part failed — identifying the cause needs further checking, such as recounting or inspecting the slots.
 
-**EVALUATE:** The comparison direction is sensible: the board is \(2\text{ cm}\) taller. The conclusion does not cover tilting, bending, or changing the opening because those possibilities were excluded from the model.
+## From situation to schematic
+
+<!-- card-id: 61281564-a563-4778-b20b-81ffee4f1813 -->
+Q: A model is often drawn as a **schematic**: a simplified technical drawing that shows only the needed shapes and their measured values. Two conventions: a double-headed arrow marks the distance between its two ends, labeled with a measured quantity value; and the note "not to scale" warns that drawn sizes may not match real proportions, so trust the labels, not the picture. The measured values below are heights of the rigid box (lid closed) and of the open shelf gap.
+
+![Schematic labeled not to scale: a rectangular box with a vertical double-headed arrow labeled twenty-nine centimeters stands beside two shelf boards whose gap carries a vertical double-headed arrow labeled thirty-one centimeters. In the drawing the box appears slightly taller than the gap.](../figures/01_systems_quantities_and_models/upright-fit-model.svg)
+
+The model's rule: a rigid box standing upright fits into the gap if the box height is less than the gap height. What does the model predict here, and which information in the figure must you *not* use?
+A: The box fits: \(29\text{ cm}<31\text{ cm}\), so the model predicts the upright box passes into the gap. You must not use the drawn sizes — the schematic is not to scale, and the box is deliberately drawn looking taller than the gap; only the labeled values carry measured information.
+
+<!-- card-id: 67e1b5bd-7263-45c4-9a93-70af57714139 -->
+P: A rigid wooden board, measured upright with height \(62\text{ cm}\), is to be slid upright into a cabinet opening whose measured height is \(60\text{ cm}\). Use the upright-fit model — a rigid object standing upright fits into an opening if the object's height is less than the opening's height — to state the model's prediction, and check the reasoning.
+S: **IDENTIFY:** The system is the board plus the cabinet opening. The measurands are two heights, both already measured: board \(62\text{ cm}\), opening \(60\text{ cm}\). The model is the upright-fit rule with its rigidity and upright-position assumptions.
+
+**PLAN:** Compare the two quantity values, which share the same unit, using the less-than test.
+
+**EXECUTE:** Is \(62\text{ cm}<60\text{ cm}\)? No — \(62>60\). The model predicts the board does *not* fit upright in the opening.
+
+**EVALUATE:** Both values are in centimeters, so the comparison is valid without conversion, and the board exceeds the opening by \(2\text{ cm}\) — a clear margin, not a borderline case. The prediction holds only within the model's assumptions: a rigid board kept upright. Tilting or bending the board lies outside this model, so the model says nothing about those options.

@@ -19,10 +19,11 @@ parser, identity, and figure rules remain in the staged standards.
   energy, momentum, fields, waves, circuits, and thermal mechanisms; extended
   laboratory, derivation, coding, and statistical work remains outside SRS
 
-The declared algebra deck is the machine-readable prerequisite, but its staged
-copy contains no scheduled cards. The pilot therefore uses only elementary
-comparisons and arithmetic that are explicitly visible in the scheduled
-transitive arithmetic closure. It does not assume symbolic-function vocabulary.
+The declared algebra deck is the machine-readable prerequisite; its staged copy
+now contains one scheduled chapter (variables, expressions, substitution, and
+evaluation). The pilot nevertheless relies only on elementary comparisons,
+arithmetic, and measurement skills explicitly visible in the scheduled
+transitive arithmetic closure, and assumes no symbolic-function vocabulary.
 
 ## Curriculum and prerequisite decisions
 
@@ -47,24 +48,28 @@ Front labels refer to the planned and actual order in
 
 | Concept or representation | Front(s) requiring it | Confirmed inbound source or first explanation | First supported retrieval | Later application | Status |
 |---|---|---|---|---|---|
-| Number comparison, multiplication, decimals, `<`, and units | 01-06, 01-07, 01-14, 01-17, 01-18 | Scheduled arithmetic closure: whole-number comparison, multiplication, decimals, and `measurement-estimation-and-decisions` | Inbound | 01-07, 01-14, 01-17, 01-18 | confirmed inbound |
-| IPEE problem headings | 01-18 back only | Repeatedly established in scheduled arithmetic problem cards | Inbound | 01-18 | confirmed inbound |
-| System; system boundary; surroundings | 01-01 onward | 01-01 front defines all three in ordinary language | 01-01 | 01-02, 01-03, 01-11, 01-17, 01-18 | established |
-| Dashed candidate-boundary loops and option labels | 01-02 | 01-02 front explains the diagram grammar before asking for a choice | 01-02 | Future system diagrams | established |
-| Property and physical quantity | 01-04 onward | 01-04 front contrasts a general feature with a feature that has comparable size/amount and a number plus reference | 01-04 | 01-05 through 01-09, 01-17, 01-18 | established |
-| Quantity value; number–unit pairing | 01-05 onward | 01-05 front distinguishes the quantity from a value used to express it | 01-05 | 01-06, 01-07, 01-17, 01-18 | established |
-| Unit as agreed reference; measurement as experimental comparison | 01-06 onward | 01-06 front supplies the bridge; arithmetic closure already establishes measurement and unit operationally | 01-06 | 01-07 through 01-09, 01-15 through 01-18 | established |
-| Same quantity expressed in different units | 01-07 | 01-07 front gives an equivalent-unit example | 01-07 | Chapters 2 and 7 | established |
-| Measurand | 01-08 onward | 01-08 front defines it as the particular quantity intended to be measured and specifies object/property/condition | 01-08 | 01-09, Chapters 3–4 | established |
-| Descriptive observation versus measurement | 01-09 | 01-09 front explains that an observation may be descriptive while a measurement supplies a quantity value | 01-09 | 01-15, 01-16 | established |
-| Physical system versus model; simplification | 01-10 onward | 01-10 front defines a model as a purposeful simplified representation | 01-10 | 01-11 through 01-18 | established |
-| Assumption | 01-12 onward | 01-12 front defines it as a condition accepted while using a model | 01-12 | 01-13, 01-17, 01-18 | established |
-| Purpose-dependent relevance | 01-13 onward | 01-10 and 01-13 fronts explain that useful details depend on the question | 01-13 | 01-17, 01-18 | established |
-| Prediction | 01-14 onward | 01-14 front defines a prediction as the observable or measurable result expected if the model and assumptions apply | 01-14 | 01-15 through 01-18 | established |
-| Model test; prediction–observation comparison | 01-15 onward | 01-15 front defines a test through a comparison that could disagree | 01-15 | 01-16, 01-18 | established |
-| Mismatch does not identify its own cause | 01-16 onward | 01-16 front supplies the measured and predicted values and asks for the bounded inference | 01-16 | Chapters 4, 5, 9, and 10 | established |
-| Dimension arrows and schematic-not-to-scale convention | 01-17 | 01-17 front explicitly explains both cues before asking for a prediction | 01-17 | 01-18 and later technical diagrams | established |
-| Straight, upright fit model and scope limit | 01-17 onward | 01-17 front states the rule and assumptions; 01-17 answer models the prediction | 01-17 | 01-18 independent application and evaluation | established |
+| Number comparison, `<`, multiplication, decimals, cm/m and 1 m = 100 cm, estimate ("roughly") versus measured value, counting | 01-05 through 01-08, 01-14, 01-15, 01-17 through 01-19 | Scheduled arithmetic closure: whole-number comparison, multiplication, decimals, and measurement/estimation chapters | Inbound | Throughout | confirmed inbound |
+| Ruler and scale reading | 01-08, 01-10 | Scheduled arithmetic measurement chapter; 01-08 front re-bridges "instrument" in ordinary language | Inbound | 01-10, 01-19 | confirmed inbound |
+| IPEE problem headings | 01-19 back only | Repeatedly established in scheduled arithmetic problem cards | Inbound | 01-19 | confirmed inbound |
+| System; system boundary; surroundings | 01-01 onward | 01-01 front defines all three in ordinary language | 01-01 | 01-02 through 01-04, 01-11, 01-12, 01-19 | established |
+| Boundary as an imagined, chooser-drawn line that may enclose separated objects | 01-02 onward | 01-02 front supplies the bridge before asking for the inference | 01-02 | 01-03, 01-04 | established |
+| Dashed candidate-boundary loops and letter labels | 01-03 | 01-03 front explains the diagram grammar before asking for a choice | 01-03 | Future system diagrams | established |
+| Question-dependent system choice | 01-04 onward | 01-03 answer justifies the choice by the stated question; 01-04 asks for the principle | 01-04 | 01-14, 01-19 | established |
+| Property and physical quantity | 01-05 onward | 01-05 front contrasts a general feature with one reportable as number plus unit | 01-05 | 01-06 through 01-10, 01-19 | established |
+| Quantity value; number–unit report | 01-06 onward | 01-06 front distinguishes the quantity from the report expressing it | 01-06 | 01-07, 01-08, 01-10, 01-18, 01-19 | established |
+| Same quantity, different unit reports | 01-07 | 01-07 front supplies the exact identity and asks what changed | 01-07 | Chapters 2 and 7 | established |
+| Measurement as a carried-out experimental comparison; instrument | 01-08 onward | 01-08 front defines both; arithmetic closure already established comparing to a unit | 01-08 | 01-09, 01-10, 01-16, 01-19 | established |
+| Measurand: object, property, condition | 01-09 | 01-09 front defines it before asking for a missing specification | 01-09 | Chapters 3–4 | established |
+| Observation versus measurement | 01-10 | 01-10 front explains that observation may be descriptive; measurement yields a quantity value | 01-10 | 01-16, 01-17 | established |
+| Physical model as purposeful simplified stand-in | 01-11 onward | 01-11 front defines it before asking what makes the drawing a model | 01-11 | 01-12 through 01-19 | established |
+| System versus model discrimination | 01-12 | Both terms established (01-01, 01-11) before the contrast | 01-12 | 01-19 | established |
+| Assumption; rigid | 01-13 onward | 01-13 front defines both before the fabric-cube diagnosis | 01-13 | 01-18, 01-19 | established |
+| Purpose decides which details a model keeps | 01-14 | 01-11 front establishes "keeps only the features the question needs"; 01-14 applies it | 01-14 | 01-19 | established |
+| Model prediction | 01-15 onward | 01-15 front defines it before the jar-count computation | 01-15 | 01-16 through 01-19 | established |
+| Model test must be able to disagree | 01-16 onward | 01-16 front defines the comparison before asking why it is genuine | 01-16 | 01-17, 01-19 | established |
+| Mismatch supports only a bounded conclusion | 01-17 | 01-15 and 01-16 establish prediction and test; 01-17 asks for the inference | 01-17 | Chapters 4, 5, 9, and 10 | established |
+| Schematic; dimension arrows; not-to-scale convention | 01-18 | 01-18 front explains all three cues before asking for a prediction | 01-18 | 01-19 and later technical diagrams | established |
+| Upright-fit rule and its scope | 01-18 onward | 01-18 front states the rule; 01-19 front restates it faded for independent use | 01-18 | 01-19 evaluation checks scope explicitly | established |
 
 Rejected examples for the pilot include falling objects, pushes, collisions,
 moving vehicles, heating, springs, circuits, magnets, light, and sound. They
@@ -141,8 +146,8 @@ introduce a new method on the back.
 
 | Chapter | Basic `Q:/A:` | Cloze `C:` | Problem `P:/S:` | Figures | Reconciliation |
 |---|---:|---:|---:|---:|---|
-| 1 planned | 17 | 0 | 1 | 2 front figures, each with editable TikZ and accessible SVG | baseline |
-| 1 actual | 17 | 0 | 1 | 2 front figures, each with editable TikZ and accessible SVG | matched; the analyzed fit appears as a supported basic card before the independent problem |
+| 1 planned | 18 | 0 | 1 | 2 front figures, each with editable TikZ and accessible SVG | baseline |
+| 1 actual | 18 | 0 | 1 | 2 front figures, each with editable TikZ and accessible SVG | matched; the analyzed fit appears as a supported basic card (01-18) before the independent problem (01-19) |
 | 2–10 actual | 0 | 0 | 0 | 0 | intentionally withheld by pilot gate; no unexplained omission |
 
 The pilot has no unexplained card-form, problem, or figure difference. The

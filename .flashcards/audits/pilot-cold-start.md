@@ -1,141 +1,101 @@
-# Pilot cold-start audit: systems, quantities, and models
+# Pilot cold-start audit — Chapter 1 (regenerated pilot)
 
-cold_start_status: pass
-unresolved_dependencies: 0
+Deck: `physics/physical-reasoning-and-measurement`
+Chapter audited: `flashcards/01_systems_quantities_and_models.md` (19 cards: 18 `Q:/A:`, 0 `C:`, 1 `P:/S:`)
+Audit date: 2026-07-22
+Method: adversarial front-only simulation in first-learning order. For each
+front, every domain-bearing word, representation, and implied process was
+recorded and classified **before** the answer was inspected; answers were then
+checked for terms that later fronts might silently assume. Headings, prose, and
+figure content outside scheduled `Q:/A:` and `P:/S:` blocks were given no
+instructional credit.
 
-## Audit scope and learner contract
+## Frozen learner contract
 
-- Deck: physics/physical-reasoning-and-measurement
-- Pilot: flashcards/01_systems_quantities_and_models.md
-- Audited cards: 18 scheduled blocks in intended first-learning order
-- Declared deck prerequisite:
-  mathematics/elementary-algebra-and-functions
-- Resolved transitive external closure:
-  mathematics/quantitative-reasoning-and-arithmetic
-- Assumed tools: none
-- Allowed domain knowledge: none; all physics terminology is unseen
-- Local inbound chapters: none
-- Exact external providers:
-  `mathematics/quantitative-reasoning-and-arithmetic#10_measurement_estimation_and_decisions`
-  for `measurement-unit` and `unit-conversion`
-
-The staged schema-2 graph is the executable learner contract for this isolated
-run. The staged algebra deck has no scheduled cards, so the pilot does not rely
-on unverified symbolic-function vocabulary. Its calculation dependencies are
-limited to scheduled arithmetic capabilities: whole-number and decimal
-comparison, multiplication, less-than and greater-than signs, number–unit
-measurements, simple unit conversion, and reasonableness checks.
-
-No local inbound edge was added. The qualified external concept edges make the
-previously deck-level unit and conversion assumptions inspectable without
-requiring the learner UI to guess a provider chapter. The recommended
-mathematics/geometry-and-measurement deck remains unavailable and is not
-assumed.
-
-## Scan method
-
-The chapter was scanned in scheduled order with answers withheld. For each
-front, the parsing and attempt dependencies below were recorded before its
-answer was checked. The answer was then inspected for terminology or procedures
-that a later front might assume. Headings, prose outside blocks, and planning
-tables were not counted as instruction.
-
-The semantic scan caused six repairs before the final pass:
-
-1. Front 01-02 now defines measuring apparatus, and its alt text carries the
-   same A/B spatial information as the visible figure.
-2. Front 01-04's answer no longer introduces unexplained magnitude wording.
-3. Front 01-09 now states that the numerical record came from a ruler
-   comparison, so a number and unit are not mistaken for proof of measurement.
-4. Front 01-12 defines rigid as not bending before later use.
-5. Front 01-17 defines schematic and explains its dimension arrows and
-   not-to-scale convention before the visual decision.
-6. Front 01-18 uses an ordinary board and the already-established stated model,
-   avoiding extra display-panel and “size-only model” vocabulary.
+- Confirmed prerequisite deck: `mathematics/elementary-algebra-and-functions`
+  (staged copy schedules one chapter: variables, expressions, substitution,
+  evaluation).
+- Machine-resolved external closure: `mathematics/quantitative-reasoning-and-arithmetic`
+  (complete: numbers, comparison and `<`/`>`, arithmetic operations, decimals,
+  fractions, ratios, percents, estimate versus exact ("about"/"roughly"),
+  rounding, measurement as number-plus-unit, cm/m/g/kg/L/mL, conversions
+  including 1 m = 100 cm, false precision, reasonableness checks, scale/ruler
+  reading, tables, IPEE problem headings).
+- Chapter 1 explicit concept edges: `measurement-unit` and `unit-conversion`,
+  both provided by the arithmetic deck's chapter 10 in the staged closure.
+- Confirmed subject (physics) knowledge: none. All physics vocabulary is
+  treated as unseen.
+- Assumed tools: none. No inbound edge beyond the sandbox-resolved closure was
+  added; no unresolved edge was proposed.
 
 ## Front-by-front findings
 
-| Front | Dependencies recorded before reading the answer | Allowed source or earlier establishment | Answer/back dependency check | Finding |
+Front labels 01-01 … 01-19 follow file order. "Inbound" = arithmetic/algebra
+closure above; "01-NN" = established by that scheduled front.
+
+| Front (card-id prefix) | Target decision | Dependencies found on the front | Source of each | Verdict |
 |---|---|---|---|---|
-| 01-01 system and surroundings | Question; ordinary book/table; object/collection/region; inside/outside | Everyday language; the front defines system, system boundary, and surroundings | Answer uses only the three newly defined terms | pass |
-| 01-02 boundary diagram | 01-01 system grammar; dashed candidate loops; A/B labels; book/ruler; measuring apparatus | 01-01; the front defines apparatus and loop meaning; Markdown alt and SVG description encode which objects each loop encloses | Answer uses prior surroundings and ordinary “measuring setup” | pass |
-| 01-03 question-dependent boundary | Question and system boundary | 01-01 and 01-02 | Answer introduces no later required term | pass |
-| 01-04 property versus quantity | Ordinary feature, title, height; number and unit | Number/unit is confirmed inbound; the front defines property and physical quantity in accessible language | Answer uses size/amount rather than unexplained metrology jargon | pass |
-| 01-05 quantity versus value | Physical quantity; number and unit | 01-04 and confirmed inbound measurement-unit knowledge; front defines quantity value | Answer restates the target distinction without adding a later prerequisite | pass |
-| 01-06 measurement and unit | Quantity value; ruler; comparison; guess | 01-05; front defines measurement and unit | Answer reinforces experimental comparison; no application precedes it | pass |
-| 01-07 same quantity, different unit | Decimal equality; meter/centimeter conversion; physical length | Confirmed arithmetic closure; 01-04 through 01-06 | Answer distinguishes numerical value/unit from underlying quantity | pass |
-| 01-08 measurand | Particular book, height, flat condition; measurement | 01-04 through 01-06; front defines measurand and supplies object/property/condition | Answer makes the target more specific but adds no required term | pass |
-| 01-09 description versus measurement | Observation; descriptive record; ruler comparison; quantity value | 01-05, 01-06; front defines the observation contrast and states the experimental comparison | Answer uses already-established measured quantity value | pass |
-| 01-10 simplified physical model | System; decorated box; rectangular outline; upright fit; purpose | 01-01; front defines physical model as purposeful simplified representation | Answer explains kept height/width and omitted decoration; no future-physics example | pass |
-| 01-11 system versus model | Real box; rectangular drawing; system; model | 01-01 and 01-10 | Answer directly contrasts the established concepts | pass |
-| 01-12 assumption and rigidity | Model; flat; rigid/not bending; accepted condition | 01-10; front defines assumption and rigid | Answer names model assumptions without new later dependency | pass |
-| 01-13 purpose-dependent models | Same box; outer height/width; markings; useful model | 01-10 through 01-12 | Answer repeats the established height/width distinction and adds no later dependency | pass |
-| 01-14 prediction | Model and assumptions; complete rows/slots; multiplication | 01-10 through 01-12; multiplication confirmed inbound; front defines prediction | Answer executes \(3\times4=12\) and repeats the stated completeness assumption | pass |
-| 01-15 testability | Physical model; prediction; observation/measurement; possible disagreement | 01-09, 01-10, 01-14 | Answer defines the test relationship; no unseen mechanism is invoked | pass |
-| 01-16 bounded mismatch inference | Prediction, observation, usable slot, strongest conclusion | 01-14 and 01-15; counts and comparison confirmed inbound | Answer names a mismatch and limits the inference; neither term is required unbridged later | pass |
-| 01-17 analyzed fit schematic | System; rigid; model; assumption; prediction; less-than; measured height; dimension arrows; schematic/not-to-scale grammar | 01-01 through 01-16; less-than and unit comparison confirmed inbound; front explicitly teaches both visual conventions and supplies the model rule | Answer applies \(29\text{ cm}<31\text{ cm}\) and repeats the scope conditions | pass |
-| 01-18 independent fit problem | Rigid board/opening; height; no tilting; ordered reasoning sequence; greater-than; model scope; IPEE headings on back | 01-01 through 01-17; comparison and IPEE structure confirmed in the scheduled arithmetic closure | Solution applies only established steps, checks the \(2\text{ cm}\) difference, and limits the conclusion to stated assumptions | pass |
+| 01-01 (ed58aef2) | Classify unchosen objects as surroundings | system, system boundary, surroundings (all defined on this front); box/shelf/closet (ordinary) | self-bridged on front | pass |
+| 01-02 (7b7f1595) | Infer that one boundary may enclose separated objects | system, boundary (01-01); imagined/chooser-drawn (bridged on front) | 01-01 + front bridge | pass |
+| 01-03 (1aa00cc9) | Choose the boundary suited to the stated question (figure) | system boundary (01-01); chooser-drawn (01-02); dashed-loop and letter-label grammar (explained on front); alt text uses only established words | 01-01, 01-02 + front bridge | pass |
+| 01-04 (192d8b16) | Explain question-dependence of system choice | system (01-01); boundary chosen for a question (01-02, 01-03) | 01-01–01-03 | pass |
+| 01-05 (a3849f0e) | Discriminate property from physical quantity | property, physical quantity (defined on front); number-with-unit, cm | front bridge; inbound | pass |
+| 01-06 (2655ebe3) | Separate quantity from quantity value | quantity (01-05); quantity value (defined on front); number, unit, centimeter | 01-05 + front bridge; inbound | pass |
+| 01-07 (41b502e9) | Identify what changes between unit reports | quantity value (01-06); 1 m = 100 cm exact identity; decimals | 01-06; inbound | pass |
+| 01-08 (479582d1) | Identify the measurement result and why | measurement, instrument (defined/bridged on front); ruler, unit markings, estimate ("roughly") | front bridge; inbound (scale reading, estimate vs exact) | pass |
+| 01-09 (10dd8e1b) | Name a missing measurand specification | measurand (defined on front: object/property/condition); measurement (01-08); quantity (01-05) | front bridge; 01-08; 01-05 | pass |
+| 01-10 (c56da2b9) | State what a measurement adds over a description | observation (defined on front); measurement (01-08); quantity value (01-06); taller-than comparison | front bridge; 01-08; 01-06; inbound | pass |
+| 01-11 (b4b274e7) | Explain what makes a drawing a model | physical model (defined on front); system (01-01) | front bridge; 01-01 | pass |
+| 01-12 (3eadac7a) | Discriminate system from model | system (01-01); model (01-11); quantity value label (01-06) | established earlier | pass |
+| 01-13 (71da68d5) | Diagnose the threatened assumption | assumption, rigid (both defined on front); model (01-11) | front bridge; 01-11 | pass |
+| 01-14 (8399d662) | Select the purpose-relevant detail | model keeps question-needed features (01-11); cm; width comparison | 01-11; inbound | pass |
+| 01-15 (dc9e1660) | Compute the model's prediction | model prediction (defined on front); model, assumptions (01-11, 01-13); 3 × 4 multiplication | front bridge; 01-11, 01-13; inbound | pass |
+| 01-16 (20595df8) | Justify why the comparison is a genuine test | model test (defined on front: must be able to disagree); prediction (01-15); observed/measured (01-08, 01-10); count | front bridge; 01-15; 01-08/01-10; inbound | pass |
+| 01-17 (4247702d) | State the bounded conclusion a mismatch supports | prediction (01-15); test comparison (01-16); counts 12 vs 10 | 01-15, 01-16; inbound | pass |
+| 01-18 (61281564) | Read the schematic and predict from labels, not drawn size (figure) | schematic, double-headed dimension arrow, "not to scale" (all explained on front); rigid (01-13); model rule supplied on front; quantity values, `<` comparison | front bridge; 01-13; 01-06; inbound | pass |
+| 01-19 (67e1b5bd) | Independent fit prediction with reasoning check (P/S) | rigid (01-13); model/prediction (01-11, 01-15); upright-fit rule (01-18, restated faded on front); cm comparison | 01-13, 01-11, 01-15, 01-18; inbound | pass |
 
-## Dependency ledger result
-
-The complete concept/representation ledger is maintained in CARD_README.md.
-Every technical term, diagram convention, and procedure required by a front
-maps either to the allowed arithmetic closure or to an explanation on that
-front or an earlier scheduled card. No answer is the learner's first and only
-access to knowledge that a later front requires.
-
-The sequence establishes:
-
-1. system, boundary, and surroundings;
-2. property, quantity, quantity value, unit, measurement, and measurand;
-3. descriptive observation versus measurement;
-4. system versus model, simplification, assumption, and purpose;
-5. prediction, test, and bounded mismatch inference;
-6. analyzed then independent use of a simple comparison model.
+Answer-side scan: each back leads with the direct answer and uses only terms
+inbound or established on or before its own front. The only method shown on a
+back that later fronts rely on is the upright-fit comparison, which 01-18
+establishes as an analyzed example before 01-19 requires it independently. The
+`S:` block's IPEE headings are inbound from the arithmetic deck's problem
+cards; "measurand" and "quantity value" in the solution were established at
+01-09 and 01-06.
 
 ## Figure audit
 
-| Figure | Front role | Accessibility and leak check | Inspection |
-|---|---|---|---|
-| system-boundary-options | Choose a question-appropriate spatial boundary | TikZ source has non-empty title/description comments; SVG has viewBox, title, and description elements; Markdown alt reproduces the A/B enclosure information needed by a nonvisual learner. The image gives setup information but does not state which candidate satisfies the question. Dashes, labels, enclosure, and position make color redundant. | Full-size and 360-pixel-wide raster previews inspected; labels and dashed boundaries remain distinct. |
-| upright-fit-model | Translate two measured heights and a stated rule into a prediction | TikZ source and SVG accessibility metadata are present. Front prose defines schematic, not-to-scale, dimension arrows, model rule, and assumptions before the image. Alt text supplies the same values and straight-upright arrangement; it does not state the prediction. Arrow direction, line style, labels, and geometry make color redundant. | Full-size and 360-pixel-wide raster previews inspected; 29 cm, 31 cm, the straight arrow, and not-to-scale note remain legible. |
+| Figure | Checks |
+|---|---|
+| `system-boundary-options.svg` (front of 01-03) | TikZ source beside same-named SVG; `viewBox`, `role="img"`, `aria-labelledby`, `<title>`, `<desc>` present. Dashed loops + letter labels give a redundant non-color cue. Label "A" sits directly above its own loop; "book" label clear of loop B's edge. Legible at 900 px and 360 px. Alt text describes both candidates without naming the correct one. |
+| `upright-fit-model.svg` (front of 01-18) | Same structural checks pass. Dimension arrows combine color, double-headed shape, and text labels (redundant cues). Extension guides do not overlap the shelf boards. "not to scale" note present; the box is deliberately drawn taller than the gap, and the alt text states this appearance so a non-sighted learner faces the same trap a sighted learner must reject. Legible at 900 px and 360 px. |
 
-Both figures were rendered with the deck figure renderer; editable TikZ and
-matching accessible SVG are present. No photograph, generated raster asset,
-hand-authored SVG exception, runtime TeX, or color-only cue is used.
+## Repairs made during the audit cycle
 
-## Planned versus actual pilot inventory
+- Figure `system-boundary-options`: repositioned label "A" directly above its
+  own loop (was ambiguously near loop B's edge) and moved "book" below loop
+  B's bottom edge (dashes previously ran through the word).
+- Figure `upright-fit-model`: gap extension guides shortened so they start
+  clear of the shelf boards' right ends.
+- No card-front repairs were required: no hidden prerequisite, future-facing
+  example, blocked dependency, or multi-idea front was found in the final text.
 
-| Inventory | Planned | Actual | Reconciliation |
-|---|---:|---:|---|
-| Basic Q:/A: | 17 | 17 | matched |
-| Cloze C: | 0 | 0 | matched; no target benefits from exact token deletion |
-| Problem P:/S: | 1 independent after one analyzed basic-card example | 1 | matched |
-| Figures | 2 front figures | 2 TikZ/SVG pairs | matched |
-| Later-chapter cards or figures | 0 | 0 | matched; intentionally withheld by pilot gate |
+## Inventory reconciliation
 
-No planned pilot target or earned figure opportunity is unexplained or missing.
-Apparatus scale reading, graphs, temporal/before-after states, and a labeled
-reasoning-cycle graphic remain intentionally omitted for the reasons recorded
-in CARD_README.md.
+Planned (CARD_README design ledger): 18 `Q:/A:`, 0 `C:`, 1 `P:/S:`, 2 figures.
+Actual: 18 `Q:/A:`, 0 `C:`, 1 `P:/S:`, 2 figures. Matched; zero clozes remain
+intentional (every target requires discrimination, explanation, prediction, or
+method execution rather than token recall). All 11 frontmatter `provides`
+concepts are established by scheduled fronts. Rejected example families
+(motion, force, energy, heating, circuits, light, sound) were kept out; all
+scenarios use static objects, lengths, and counts within the inbound closure.
 
-## Validation evidence and isolated-run limitation
+## Status
 
-- Stable-ID check: pass; no missing stable IDs.
-- Figure stale-output check: pass for two TikZ figures.
-- Parser/markup validation: 18 cards (17 basic, 0 cloze, 1 problem), with zero
-  parser warnings, KaTeX errors, image errors, identity errors, cloze lints, or
-  frontmatter lints.
-- Figure inspection: pass at full size and phone width.
-- The full validator reports one prerequisite-resolution error because it looks
-  for the declared algebra repository in the isolated workspace's parent
-  directory. The machine-resolved staged graph and complete staged closure are
-  present under .flashcards/prerequisites/ and were read. This sandbox-path
-  limitation does not create an unexplained learner dependency and was not
-  “repaired” by changing or adding an inbound edge.
+Every dependency row above is confirmed inbound, established earlier, or
+minimally self-bridged on its own front. No row is blocked or unresolved.
 
-## Pilot gate
-
-The authored pilot has no unexplained front dependency and uses no later
-physics concept as scaffolding. Chapters 2–10 remain planning rows only. Stop
-for explicit human approval before authoring any later chapter.
+```text
+cold_start_status: pass
+unresolved_dependencies: 0
+```
