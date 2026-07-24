@@ -2,6 +2,7 @@
 order = 1
 subject = "physics"
 authoring_model = "claude-fable-5"
+authoring_reasoning_effort = "high"
 tags = ["physical-reasoning", "systems", "quantities", "measurement", "models"]
 prerequisites = [
   "concept:mathematics/quantitative-reasoning-and-arithmetic#measurement-unit",
