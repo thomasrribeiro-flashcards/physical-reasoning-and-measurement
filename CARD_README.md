@@ -409,3 +409,61 @@ mixed audit (05-16), preceded by supported single-step retrievals.
 |---|---:|---:|---:|---:|---|
 | 5 planned | 13 | 0 | 3 | 4 front figures, TikZ + SVG | baseline for the chapter-5 isolated build |
 | 5 actual | 13 | 0 | 3 | 4 front figures, TikZ + SVG | matched; validator total 35 deck cards = 19 (ch4) + 16 (ch5); no unexplained omission |
+
+## Chapter 6 design ledger (proportional reasoning and scaling)
+
+Allowed inbound frontier: Chapter 5 scheduled cards (tables, independent/
+dependent quantities, successive differences, axes, data points, trends,
+trend lines, anomalies, interpolation/extrapolation, axis-start artifacts,
+display choice), capability summaries for Chapters 1–4 (quantity-value terms;
+SI units and conversion; procedure, resolution, false precision; repeat
+variation, mean, uncertainty, random/systematic error), the scheduled external
+arithmetic closure (ratio, rate, proportional-relationship names; fractions,
+decimals, percent; measurement units via the fully staged arithmetic
+chapter 10), and the algebra capability summary (variable, equation,
+substitution, evaluating an expression). "Slope" is *not* used — Chapter 5
+established "steepness" only. Symbolic per-unit notation (mL/s) waits for
+Chapter 7; per-unit values are spelled out ("grams per coin"). "Origin" is
+bridged on the front that first needs it.
+
+| Target | Form | Ledger note |
+|---|---|---|
+| Direct proportion: doubling test, zero-together | `Q:/A:` 06-01 | coin-mass table from ch5 reused |
+| Constant of proportionality as a per-unit value | `Q:/A:` 06-02 | ratio test on the same table |
+| Proportion equation and substitution prediction | `Q:/A:` 06-03 | m = 5.2 n; algebra summary supplies substitution |
+| Exact form y = kx | `C:` 06-04 | one deletion, after 06-03 establishes the equation |
+| Graph signature: straight line through the origin | `Q:/A:` 06-05 | figure card; "origin" bridged on the front |
+| Steady rise with a nonzero start is not proportional | `Q:/A:` 06-06 | jar-plus-coins trap; doubling test fails |
+| Scale factor as a multiplier within a relationship | `Q:/A:` 06-07 | water-depth table ×1.25, inside measured range |
+| Scaled drawing: one factor for every length | `Q:/A:` 06-08 | figure card; door 200×80 cm → 10 cm tall |
+| Ratio invariance under scaling | `Q:/A:` 06-09 | 200:80 = 10:4 = 2.5; shape preservation |
+| Inverse proportion: one doubles, the other halves | `Q:/A:` 06-10 | ribbon-sharing context |
+| Constant-product test for inverse proportion | `Q:/A:` 06-11 | 600 mL fill; products all 600 |
+| Falling is not enough: inverse versus mere decrease | `Q:/A:` 06-12 | figure card; products 60,90,60 versus 60,60,60 |
+| Wobble versus drift in a ratio list | `Q:/A:` 06-13 | ch4 repeat-variation logic applied to ratios |
+| Analyzed proportional-data test and prediction | `P:/S:` 06-14 | full IPEE on a paper-stack table |
+| Faded scale-factor enlargement | `P:/S:` 06-15 | photo 10×15 → 25 cm wide; thin support |
+| Independent mixed discrimination and claim repair | `P:/S:` 06-16 | direct, nonzero-start, inverse, and a flawed claim |
+
+Cloze count is one by design: y = kx is the chapter's only compact
+exact-recall token; every other target is a discrimination, prediction,
+diagnosis, or method execution. Problem progression: analyzed (06-14) →
+faded (06-15) → independent mixed (06-16), preceded by supported
+single-step retrievals.
+
+### Chapter 6 figure opportunity inventory
+
+| Opportunity | Decision | Retrieval role or reason |
+|---|---|---|
+| Three rising graphs: through-origin straight, nonzero-start straight, steepening curve | Include: `rising-graph-shapes` (front of 06-05) | picking the proportional signature out of near-neighbors is a visual discrimination; prose would state the answer |
+| Real door beside its scale drawing with dimension arrows | Include: `scaled-door-drawing` (front of 06-08) | the two-object correspondence and the unknown width are spatial; the deliberate not-to-scale note keeps the artwork from leaking the factor |
+| Two falling graphs with labeled values | Include: `falling-graph-shapes` (front of 06-12) | inverse-versus-merely-decreasing must be tested from labeled values on curves, not asserted |
+| Double number line for scale factors | Omit | the arithmetic deck's conversion-map grammar already covers paired-scale reasoning; no new scheduling decision here |
+| Proportional versus nonproportional table image | Omit | markdown tables are inbound from ch5 and carry the same decision without an image |
+
+### Chapter 6 planned versus actual inventory
+
+| Chapter | Basic `Q:/A:` | Cloze `C:` | Problem `P:/S:` | Figures | Reconciliation |
+|---|---:|---:|---:|---:|---|
+| 6 planned | 12 | 1 | 3 | 3 front figures, TikZ + SVG (≤4 allowed) | baseline for the chapter-6 isolated build |
+| 6 actual | 12 | 1 | 3 | 3 front figures, TikZ + SVG | matched; 16 new cards; double-number-line figure intentionally omitted |

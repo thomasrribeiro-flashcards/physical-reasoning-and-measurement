@@ -1,0 +1,31 @@
+% flashcards-title: Three rising trend lines on separate axes
+% flashcards-desc: Three small graphs labeled A, B, and C, each with a horizontal and a vertical axis meeting at a corner marked zero. In A a straight line rises from the corner itself. In B a straight line rises but begins partway up the vertical axis, above the corner. In C a line leaves the corner and curves upward ever more steeply.
+\documentclass[dvisvgm,tikz,border=8pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  % Panel A: straight through the origin
+  \draw[DeckInk, line width=1.1pt] (0,0) -- (2.7,0);
+  \draw[DeckInk, line width=1.1pt] (0,0) -- (0,2.1);
+  \node[font=\sffamily\small, below left=0pt and 0pt of {(0,0)}] {0};
+  \node[font=\sffamily\bfseries] at (0.35,2.3) {A};
+  \draw[DeckAccent, line width=1.4pt] (0,0) -- (2.45,1.75);
+  % Panel B: straight, nonzero start
+  \begin{scope}[xshift=3.8cm]
+    \draw[DeckInk, line width=1.1pt] (0,0) -- (2.7,0);
+    \draw[DeckInk, line width=1.1pt] (0,0) -- (0,2.1);
+    \node[font=\sffamily\small, below left=0pt and 0pt of {(0,0)}] {0};
+    \node[font=\sffamily\bfseries] at (0.35,2.3) {B};
+    \draw[DeckAccent, line width=1.4pt] (0,0.85) -- (2.45,1.85);
+  \end{scope}
+  % Panel C: through the origin but curving upward
+  \begin{scope}[xshift=7.6cm]
+    \draw[DeckInk, line width=1.1pt] (0,0) -- (2.7,0);
+    \draw[DeckInk, line width=1.1pt] (0,0) -- (0,2.1);
+    \node[font=\sffamily\small, below left=0pt and 0pt of {(0,0)}] {0};
+    \node[font=\sffamily\bfseries] at (0.35,2.3) {C};
+    \draw[DeckAccent, line width=1.4pt]
+      (0,0) .. controls (1.5,0.15) and (2.1,0.7) .. (2.45,1.85);
+  \end{scope}
+\end{tikzpicture}
+\end{document}
