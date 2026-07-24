@@ -142,13 +142,67 @@ names the system and quantity, applies the already-analyzed comparison rule,
 computes the prediction, and checks both arithmetic and scope. It does not
 introduce a new method on the back.
 
+## Chapter 2 design ledger (SI units and quantity values)
+
+Allowed inbound frontier for this chapter: the resolved external closure
+(arithmetic capabilities including decimals, ratios, whole-number powers, and
+the fully scheduled measurement chapter with meter/cm/km, gram/kg, liter/mL,
+s/min/h, centi-/kilo-/milli- meanings, conversion direction, precision, and
+number-needs-unit; algebra capabilities variable, equation, substitution,
+expression evaluation) plus every concept scheduled in Chapter 1. Negative
+exponents and scientific notation are *not* inbound; all prefix factors are
+therefore stated as decimal fractions or plain products, and order-of-magnitude
+language waits for Chapter 8.
+
+Retrieval targets mapped to card forms:
+
+| Target | Form | Ledger note |
+|---|---|---|
+| SI as the worldwide system; base units as starting references (including m, kg, s) | `Q:/A:` 02-01 | "SI" and "base unit" bridged on the front from inbound "agreed unit" |
+| Unit symbols are fixed international marks, not abbreviations (no plural, no period) | `Q:/A:` 02-02 | notation diagnosis of "12 kms." |
+| Quantity symbol (chosen variable) versus unit symbol (fixed) | `Q:/A:` 02-03 | bridges the algebra `variable` capability |
+| Quantity value read as number × unit; space between number and symbol | `Q:/A:` 02-04 | extends Chapter 1 quantity/value split |
+| Conversion as substitution of an equal unit relation; quantity unchanged | `Q:/A:` 02-05 | uses algebra `substitution`; re-grounds Chapter 1 card on 40 cm = 0.40 m |
+| Prefix as fixed multiplier on any unit; symbol concatenation; build mm | `Q:/A:` 02-06 | generalizes inbound centi-/kilo-/milli- |
+| micro- (µ) and mega- (M) meanings | `Q:/A:` 02-07 | supported comparison 1 µm vs 1 mm |
+| Exact recall: micro factor; mega factor | `C:` 02-08, 02-09 | clozes only after meaning established, per blueprint |
+| Case sensitivity of symbols (mg vs Mg) | `Q:/A:` 02-10 | interference pair established on both sides first |
+| Kilogram contains a prefix; further prefixes attach to gram | `Q:/A:` 02-11 | notation diagnosis of "millikilogram" |
+| Choose a prefix that makes the number readable | `Q:/A:` 02-12 | 0.004 m → 4 mm with a bounded number-range cue |
+| Compose conversion factors along the prefix ladder; direction | `Q:/A:` 02-13 | figure card: trace cm → km on the ladder |
+| Full multi-prefix conversion method | `P:/S:` 02-14 | analyzed IPEE: 2.4 km → cm through the base unit |
+| Faded conversion | `P:/S:` 02-15 | EXECUTE/EVALUATE only: 52 000 cm → km |
+| Prefix ladder scope: minute/hour are not prefixed seconds | `Q:/A:` 02-16 | discriminates tens-based prefixes from sixties-based time units |
+| Mixed notation audit with a conversion-based check | `P:/S:` 02-17 | parts-label diagnosis; EVALUATE uses benchmarks and case sanity |
+
+Problem progression: analyzed full IPEE (02-14) → faded (02-15) → mixed
+diagnosis (02-17), with 02-13 as the supported representation-trace step before
+independent execution. Intentionally omitted: the four remaining SI base units
+(their kinds of quantity — temperature, electric current, amount of substance,
+luminous intensity — are future-deck vocabulary; a bounded clause on 02-01
+notes their existence without naming them); scientific notation (needs
+negative exponents, not inbound); the liter's non-SI status beyond the scope
+card 02-16 (deeper unit-system history adds no retrieval decision here).
+
+### Chapter 2 figure opportunity inventory
+
+| Opportunity | Decision | Retrieval role or reason |
+|---|---|---|
+| Prefix ladder mm–cm–m–km with stated unit equalities | Include: `prefix-ladder` (front of 02-13) | Learner must trace a two-step path and compose direction and factors; the equalities are setup, the composition is the retrieval. Also serves as the chapter's SI relationship representation. |
+| Quantity-value anatomy diagram (number, space, prefix, unit symbol) | Omit | A labeled anatomy figure would restate the notation rules it is meant to test; verbal contrast plus the 02-17 audit problem exercises the same decision. |
+| Aligned two-line conversion map (km/m) | Omit | Duplicates the inbound arithmetic figure grammar and skill; no new scheduling decision. |
+| Object-size scale with µm-to-km benchmarks | Omit | Honest spacing needs a logarithmic axis, which is not established until Chapter 8; benchmarks are given verbally instead. |
+| Prefix factor table as an image | Omit | Exact factors are retrieval targets (clozes), so a permanent table on a front would leak answers; the ladder figure carries the relational picture. |
+
 ## Planned versus actual inventory
 
 | Chapter | Basic `Q:/A:` | Cloze `C:` | Problem `P:/S:` | Figures | Reconciliation |
 |---|---:|---:|---:|---:|---|
 | 1 planned | 18 | 0 | 1 | 2 front figures, each with editable TikZ and accessible SVG | baseline |
 | 1 actual | 18 | 0 | 1 | 2 front figures, each with editable TikZ and accessible SVG | matched; the analyzed fit appears as a supported basic card (01-18) before the independent problem (01-19) |
-| 2–10 actual | 0 | 0 | 0 | 0 | intentionally withheld by pilot gate; no unexplained omission |
+| 2 planned | 12 | 2 | 3 | 1 front figure (prefix ladder), TikZ + SVG | baseline for the chapter-2 isolated build |
+| 2 actual | 12 | 2 | 3 | 1 front figure (prefix ladder), TikZ + SVG | matched; clozes appear only after 02-07 establishes both new prefix meanings |
+| 3–10 actual | 0 | 0 | 0 | 0 | intentionally withheld; later chapters are outside this build's boundary |
 
 The pilot has no unexplained card-form, problem, or figure difference. The
 absence of clozes remains intentional because the targets require discrimination,
