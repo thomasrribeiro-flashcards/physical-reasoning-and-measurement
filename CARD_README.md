@@ -530,3 +530,70 @@ with 07-18 enforcing the check-rejects-but-never-confirms limit on data.
 |---|---:|---:|---:|---:|---|
 | 7 planned | 13 | 1 | 4 | 3 front figures, TikZ + SVG (≤4 allowed) | baseline for the chapter-7 isolated build |
 | 7 actual | 13 | 1 | 4 | 3 front figures, TikZ + SVG | matched; 18 new cards; cancellation-map, dimension-tree, and equation-layout figures intentionally omitted |
+
+## Chapter 8 design ledger (estimation and order of magnitude)
+
+Allowed inbound frontier: Chapter 7 scheduled cards (mL/s slash notation,
+unit cancellation, density with water about 1.0 g/mL, cm² and cm³,
+1 mL = 1 cm³, 1 m² = 10 000 cm², two-reading method, unit check rejects
+but never confirms), capability summaries for Chapters 1–6 (quantity
+values, measurand, SI units and prefixes, resolution, rounded-value
+intervals, mean and uncertainty interval, tables and graphs, direct
+proportion and scale factor), and the external arithmetic and algebra
+closures — in particular whole-number powers and the Chapter 10
+arithmetic benchmarks (door handle ~1 m, fingernail ~1 cm, paper clip
+~1 g, textbook ~1 kg, bottle ~1 L, spoon ~5 mL, bathtub ~200 L, ten
+city blocks ~1 km, 60 s/min, 60 min/h). Scientific notation and
+negative exponents are *not* inbound: powers-of-ten form is taught here
+only for values at or above one, with whole-number exponents; sub-unit
+sizes ride on inbound prefixes (mm, cm). The order-of-magnitude
+boundary near 3 is bridged as "3 × 3 ≈ 10" because square roots are not
+inbound. "Estimate" is explicitly contrasted with Chapter 4's measured
+uncertainty interval: bounds here come from anchored judgment, not from
+spread in repeated readings.
+
+| Target | Form | Ledger note |
+|---|---|---|
+| Estimate versus unanchored guess; reference value | `Q:/A:` 08-01 | corridor from 3 door-widths; every estimate names its anchor |
+| Reference-based single-step estimate | `Q:/A:` 08-02 | figure card; 5 floors × door ≈ 2 m → building ≈ 15 m |
+| Decomposition into easier factors | `Q:/A:` 08-03 | 2.0 m paper stack; 500 sheets per 5 cm → 20 000 sheets |
+| Diagnosing a useless decomposition | `Q:/A:` 08-04 | coin jar; renaming the unknown is not decomposing it |
+| Leading digit × power of ten form | `Q:/A:` 08-05 | 20 000 = 2 × 10⁴; read 7 × 10³ back as 7000 |
+| Order of magnitude; the ~3 boundary | `Q:/A:` 08-06 | 200 → 10², 40 000 → 10⁵; 3 × 3 ≈ 10 bridge |
+| Counting orders on a scale ladder | `Q:/A:` 08-07 | figure card; fingernail (1 cm) to city block (100 m) = 4 steps |
+| Lower and upper bounds from anchors | `Q:/A:` 08-08 | car 3–6 m via door comparisons; contrast with ch4 interval |
+| Overconfident versus honest bracket | `Q:/A:` 08-09 | figure card; narrow 5.8–6.2 fails at 6.9 m, wide 4–8 holds |
+| Propagating bounds through a product | `Q:/A:` 08-10 | 180 × 80 and 220 × 120 → 14 000–26 000, one order 10⁴ |
+| Estimate-driven decision robustness | `Q:/A:` 08-11 | worst case 18 × 25 cm = 4.5 m still fits the 5 m roll |
+| Honest precision in reporting | `Q:/A:` 08-12 | calculator 3061.224… → report about 3 × 10³ |
+| Reporting assumptions with the estimate | `Q:/A:` 08-13 | two pinned versions; an estimate is a small model |
+| Order-of-magnitude audit of a claim | `Q:/A:` 08-14 | barrel 20 000 L vs bathtub 200 L → two orders → reject; audit rejects, never confirms |
+| Analyzed anchored mass estimate | `P:/S:` 08-15 | full IPEE; bathtub 200 L → 200 000 mL × 1.0 g/mL → about 200 kg, bracket 150–300 kg |
+| Faded rate decomposition over a day | `P:/S:` 08-16 | 15/min × 1440 min → about 2 × 10⁴ breaths; bracket 12–18/min |
+| Independent decomposition with bounds | `P:/S:` 08-17 | 300 books × 3 cm (2–5 cm) → 9 m shelf run, bracket 6–15 m; inverse check |
+| Mixed strategy comparison | `P:/S:` 08-18 | anchored 9 × 10⁴ versus bare "a million"; one order apart; trust the anchored chain |
+
+Cloze count is zero by design: every chapter target is a judgment,
+construction, diagnosis, or multi-step procedure, and the only compact
+tokens in reach (10³ = 1000 and the everyday benchmarks) are inbound
+arithmetic capabilities, not new facts owed a deletion card. Problem
+progression: analyzed (08-15) → faded (08-16) → independent (08-17) →
+mixed strategy discrimination (08-18), with 08-18 also exercising the
+audit-rejects-never-confirms limit against a rival estimate.
+
+### Chapter 8 figure opportunity inventory
+
+| Opportunity | Decision | Retrieval role or reason |
+|---|---|---|
+| Five-story building with an unlabeled street door | Include: `building-floors` (front of 08-02) | reading a size off a visible reference is spatial; printing any number would leak the anchor step |
+| Powers-of-ten scale ladder with two marked rungs | Include: `scale-ladder` (front of 08-07) | counting equal ×10 steps between marked rungs is the retrieval act; shape-coded markers give a non-color cue |
+| Two bounding brackets against a tape-measure dot | Include: `bracket-comparison` (front of 08-09) | containment versus miss must be seen on a common number line to make overconfidence concrete |
+| Decomposition tree for a factor chain | Omit | the authentic working format is the written factor chain with unit cancellation from Chapter 7; a tree adds no spatial content |
+| Photographs of reference objects | Omit | benchmarks are inbound as verbal anchors; no exact-geometry or scale-critical target requires raster imagery |
+
+### Chapter 8 planned versus actual inventory
+
+| Chapter | Basic `Q:/A:` | Cloze `C:` | Problem `P:/S:` | Figures | Reconciliation |
+|---|---:|---:|---:|---:|---|
+| 8 planned | 14 | 0 | 4 | 3 front figures, TikZ + SVG (≤4 allowed) | baseline for the chapter-8 isolated build |
+| 8 actual | 14 | 0 | 4 | 3 front figures, TikZ + SVG | matched; 18 new cards; decomposition-tree and photograph figures intentionally omitted |
