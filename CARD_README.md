@@ -597,3 +597,70 @@ audit-rejects-never-confirms limit against a rival estimate.
 |---|---:|---:|---:|---:|---|
 | 8 planned | 14 | 0 | 4 | 3 front figures, TikZ + SVG (≤4 allowed) | baseline for the chapter-8 isolated build |
 | 8 actual | 14 | 0 | 4 | 3 front figures, TikZ + SVG | matched; 18 new cards; decomposition-tree and photograph figures intentionally omitted |
+
+## Chapter 9 design ledger (building and testing models)
+
+Allowed inbound frontier: Chapter 8 scheduled cards (estimate versus
+guess, reference values, decomposition, powers-of-ten form for values
+at or above one, order of magnitude, bounds and brackets, bound
+propagation, decision robustness, honest reporting, stated assumptions,
+one-way audits), capability summaries for Chapters 1–7 (system, model,
+assumption, prediction, test; SI units and prefixes; resolution and
+false precision; mean and uncertainty interval with ±; agreement
+depends on purpose; tables, axes, trends, interpolation versus
+extrapolation, wobble versus drift; direct proportion, `y = k × x`,
+scale factor, steepness; derived units, unit cancellation, dimensional
+consistency, check-one-limit), and the external arithmetic and algebra
+closures (benchmarks, rounded-value intervals, IPEE headings; variable,
+coefficient, constant term, substitution). Not inbound and not used:
+"slope" (only "steepness"), scientific notation with negative
+exponents, formal statistics, and any force/energy/motion-mechanism
+vocabulary. "Fitting" and "regime of usefulness" are new terms bridged
+on the fronts that first use them (09-06, 09-11) before any reuse.
+
+| Target | Form | Ledger note |
+|---|---|---|
+| Verbal claim → quantitative model | `Q:/A:` 09-01 | candle; needs named quantities with units plus a specific relationship |
+| Reading parameter meaning and units | `Q:/A:` 09-02 | L = 20 − 2 × t; 20 cm start, 2 cm/h rate; unit forcing by cancellation |
+| Model fingerprint in a table | `Q:/A:` 09-03 | steady drops with wobble support; drifting drops count against |
+| Matching an equation to its graph | `Q:/A:` 09-04 | figure card; L = 20 − 2 × t picks the straight falling panel |
+| Cross-representation consistency | `Q:/A:` 09-05 | equal table steps versus curved graph → check axis scales first |
+| Fitting parameters from data | `Q:/A:` 09-06 | bridges "fitting"; form assumed, numbers measured; L = 24 − 3 × t |
+| Prediction versus interval agreement | `Q:/A:` 09-07 | 15.0 cm inside 15.4 ± 0.5 → survives; consistent ≠ proven |
+| Diagnosing a mismatch | `Q:/A:` 09-08 | derivation slip, measurement problem, or wrong model; cheap checks first |
+| Choosing between competing models | `Q:/A:` 09-09 | figure card; B: H = 9 + 1.0 × n beats through-origin A on the data |
+| Difference pattern → targeted revision | `Q:/A:` 09-10 | constant +50 mL offset → revise start value, keep rate |
+| Regime of usefulness from a graph | `Q:/A:` 09-11 | figure card; bridges "regime"; line holds weeks 1–5 only |
+| Impossible-prediction check | `Q:/A:` 09-12 | L(15) = −10 cm → regime ends by 10 h; one-way check |
+| Model good enough for a purpose | `Q:/A:` 09-13 | ±0.2 cm/h wobble; dinner-length yes, burn-out-minute no |
+| Designing a discriminating test | `Q:/A:` 09-14 | measure where rival predictions differ by more than the uncertainty |
+| Analyzed model build and use | `P:/S:` 09-15 | full IPEE; salt at 5 g/s from 40 g; 240 g near t ≈ 40 s with bracket |
+| Faded prediction test | `P:/S:` 09-16 | candle at 4.0 h; 12.0 cm inside 11.9–12.7 → survives |
+| Independent model choice and use | `P:/S:` 09-17 | bottles; V = 0.5 × n beats offset rival; V(10) = 5.0 L interpolation |
+| Mixed mismatch-driven revision | `P:/S:` 09-18 | growing differences → rate fails; regime 2–6 cups; refit 0.6 cm/cup |
+
+Cloze count is zero by design: every target is a construction,
+translation, judgment, or diagnosis; the chapter introduces no compact
+notation or isolated fact owed a deletion card. Problem progression:
+analyzed model construction (09-15) → faded prediction test (09-16) →
+independent model choice (09-17) → mixed mismatch-driven revision with
+a regime call (09-18).
+
+### Chapter 9 figure opportunity inventory
+
+| Opportunity | Decision | Retrieval role or reason |
+|---|---|---|
+| Three candidate L-versus-t graph panels | Include: `equation-graph-panels` (front of 09-04) | equation-to-shape translation is the retrieval act; panels must be seen, not described |
+| Data points with two rival model lines | Include: `competing-model-lines` (front of 09-09) | judging which line passes through the points is graphical; dashed-versus-solid gives a non-color cue |
+| Data leaving a model line at high ages | Include: `plant-regime` (front of 09-11) | reading where points depart from a line is the regime judgment itself |
+| Model-building flow diagram | Omit | the workflow is verbal and sequential; a boxes-and-arrows chart adds no spatial reasoning |
+| Difference-pattern bar or table figure | Omit | the written difference row in the table is the authentic working format from Chapter 5 |
+| System/model schematic pair | Omit | system-versus-model boundaries were established visually in Chapter 1; redrawing them here re-teaches |
+| Before/after revision overlay | Omit | 09-18 requires computing the refit, not seeing it; an overlay would leak the revised line |
+
+### Chapter 9 planned versus actual inventory
+
+| Chapter | Basic `Q:/A:` | Cloze `C:` | Problem `P:/S:` | Figures | Reconciliation |
+|---|---:|---:|---:|---:|---|
+| 9 planned | 14 | 0 | 4 | 3 front figures, TikZ + SVG (≤4 allowed) | baseline for the chapter-9 isolated build |
+| 9 actual | 14 | 0 | 4 | 3 front figures, TikZ + SVG | matched; 18 new cards; flow-diagram, difference-pattern, schematic-pair, and revision-overlay figures intentionally omitted |

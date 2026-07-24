@@ -1,0 +1,48 @@
+% flashcards-title: Three candidate graphs of candle length against time
+% flashcards-desc: Three small graphs of length L in centimeters against time t in hours, labeled panel one, panel two, and panel three. Panel one shows a straight line rising from the origin. Panel two shows a straight line starting at twenty centimeters and falling to zero at ten hours. Panel three shows a curve starting at twenty centimeters that falls steeply at first and then levels off near six centimeters.
+\documentclass[dvisvgm,tikz,border=8pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[x=0.26cm, y=0.115cm]
+  % Panel 1: straight line rising from the origin
+  \begin{scope}
+    \draw[object, ->] (0,0) -- (11.8,0);
+    \node[below, font=\sffamily\small] at (5.5,-3.2) {$t$ (h)};
+    \draw[object, ->] (0,0) -- (0,26) node[above, font=\sffamily\small] {L (cm)};
+    \draw[DeckInk, line width=0.8pt] (10,-0.7) -- (10,0.7);
+    \node[below, font=\sffamily\small] at (10,-0.9) {10};
+    \draw[DeckInk, line width=0.8pt] (-0.35,20) -- (0.35,20);
+    \node[left, font=\sffamily\small] at (-0.4,20) {20};
+    \draw[DeckAccent, line width=1.6pt] (0,0) -- (10,22);
+    \node[font=\sffamily\small\bfseries, draw=DeckInk, circle, inner sep=1.6pt]
+      at (5.9,25) {1};
+  \end{scope}
+  % Panel 2: straight line from twenty centimeters down to zero at ten hours
+  \begin{scope}[shift={(17,0)}]
+    \draw[object, ->] (0,0) -- (11.8,0);
+    \node[below, font=\sffamily\small] at (5.5,-3.2) {$t$ (h)};
+    \draw[object, ->] (0,0) -- (0,26) node[above, font=\sffamily\small] {L (cm)};
+    \draw[DeckInk, line width=0.8pt] (10,-0.7) -- (10,0.7);
+    \node[below, font=\sffamily\small] at (10,-0.9) {10};
+    \draw[DeckInk, line width=0.8pt] (-0.35,20) -- (0.35,20);
+    \node[left, font=\sffamily\small] at (-0.4,20) {20};
+    \draw[DeckAccent, line width=1.6pt] (0,20) -- (10,0);
+    \node[font=\sffamily\small\bfseries, draw=DeckInk, circle, inner sep=1.6pt]
+      at (5.9,25) {2};
+  \end{scope}
+  % Panel 3: curve falling steeply then leveling off near six centimeters
+  \begin{scope}[shift={(34,0)}]
+    \draw[object, ->] (0,0) -- (11.8,0);
+    \node[below, font=\sffamily\small] at (5.5,-3.2) {$t$ (h)};
+    \draw[object, ->] (0,0) -- (0,26) node[above, font=\sffamily\small] {L (cm)};
+    \draw[DeckInk, line width=0.8pt] (10,-0.7) -- (10,0.7);
+    \node[below, font=\sffamily\small] at (10,-0.9) {10};
+    \draw[DeckInk, line width=0.8pt] (-0.35,20) -- (0.35,20);
+    \node[left, font=\sffamily\small] at (-0.4,20) {20};
+    \draw[DeckAccent, line width=1.6pt]
+      (0,20) .. controls (1.6,8.5) and (3.4,6.4) .. (10,6);
+    \node[font=\sffamily\small\bfseries, draw=DeckInk, circle, inner sep=1.6pt]
+      at (5.9,25) {3};
+  \end{scope}
+\end{tikzpicture}
+\end{document}
