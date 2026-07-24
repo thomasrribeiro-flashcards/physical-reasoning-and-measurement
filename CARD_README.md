@@ -290,3 +290,64 @@ preceding them.
 |---|---:|---:|---:|---:|---|
 | 3 planned | 13 | 0 | 3 | 3 front figures, TikZ + SVG | baseline for the chapter-3 isolated build |
 | 3 actual | 13 | 0 | 3 | 3 front figures, TikZ + SVG | matched; no unexplained omission |
+
+## Chapter 4 design ledger (repeated measurements and uncertainty)
+
+Allowed inbound frontier: Chapter 3 scheduled cards (procedure, scale
+division, two-reading method, zero error, parallax, resolution, digital
+resolution, false precision, instrument range and choice), the Chapter 1–2
+capability summaries (system/quantity/value/measurement/measurand/model
+terms; SI, symbols, prefixes, conversion, notation), IPEE headings from the
+scheduled arithmetic problem cards, and the scheduled external closure
+(decimals, halving, number lines, measurement precision, rounded-value
+intervals, reasonableness checks). The mean is *not* inbound and is taught on
+a scheduled front from inbound addition and division. Formal statistics
+(standard deviation, distributions, confidence) stays outside the deck; axis
+graph grammar waits for Chapter 5 — the dot plot is bridged as dots above an
+inbound number line.
+
+| Target | Form | Ledger note |
+|---|---|---|
+| Repeat variation is normal; one reading hides it | `Q:/A:` 04-01 | bridged from ch3 procedure vocabulary |
+| Dot plot reading: cluster and stray value | `Q:/A:` 04-02 | figure card; dot plot bridged on the front |
+| Mistake versus variation; exclusion needs a cause | `Q:/A:` 04-03 | parallax slip reuses the ch3 mechanism |
+| Mean as best value: computation plus rationale | `Q:/A:` 04-04 | mean taught here (add, divide by count) |
+| Range/half-range of readings; instrument-range interference | `Q:/A:` 04-05 | explicit contrast with ch3 "range" |
+| Spread comparison across two procedures | `Q:/A:` 04-06 | figure card; repeatability judgment |
+| Uncertainty, interval claim, and the ± sign | `Q:/A:` 04-07 | bridges the external rounded-value interval |
+| Exact reporting convention | `C:` 04-08 | one deletion, after 04-07 establishes the term |
+| Resolution floor when scatter is zero | `Q:/A:` 04-09 | joins ch3 resolution to uncertainty |
+| Consistent rounding of value and uncertainty | `Q:/A:` 04-10 | extends ch3 false precision |
+| Averaging cannot remove a constant shift | `Q:/A:` 04-11 | ch3 broken-tip zero error revisited |
+| Random versus systematic error, with remedies | `Q:/A:` 04-12 | same cause, either kind, by procedure |
+| Agreement as interval overlap | `Q:/A:` 04-13 | figure card |
+| Overlap means consistency, not equality | `Q:/A:` 04-14 | bounded-conclusion discrimination |
+| Uncertainty judged against a purpose | `Q:/A:` 04-15 | decided versus undecided fit cases |
+| Analyzed full summary with a justified exclusion | `P:/S:` 04-16 | reuses the dot-plot figure |
+| Faded summary with nothing to exclude | `P:/S:` 04-17 | volume scale from ch3 |
+| Compare two results for one measurand | `P:/S:` 04-18 | a gap exposes a hidden systematic error |
+| Mixed audit: exclusion, overprecision, systematic claim | `P:/S:` 04-19 | integrates 04-03, 04-10, 04-11 |
+
+Problem progression: analyzed (04-16) → faded (04-17) → independent
+comparison (04-18) → mixed audit (04-19), preceded by supported single-step
+retrievals. The single cloze is the chapter's only compact exact-recall
+target; every other target needs discrimination, prediction, diagnosis, or
+method execution.
+
+### Chapter 4 figure opportunity inventory
+
+| Opportunity | Decision | Retrieval role or reason |
+|---|---|---|
+| Dot plot of repeats with cluster and stray | Include: `repeat-dot-plot` (fronts of 04-02, 04-16) | cluster and outlier judgment is spatial; a printed list would delete the task |
+| Two procedures' scatter on one shared scale | Include: `spread-comparison` (front of 04-06) | comparing spreads is the retrieval; row placement and dot shape are redundant non-color cues |
+| Two uncertainty bars on one number line | Include: `interval-overlap` (front of 04-13) | overlap must be inspected, not stated; labels carry the ± values as setup |
+| Repeated-reading table | Omit | readings are short inline lists; a table image adds no scheduling decision |
+| Before/after correction figure | Omit | the 04-19 audit targets are procedural; a drawing would leak the diagnosis |
+| Apparatus drawings | Omit | instruments were established visually in Chapter 3; decorative here |
+
+### Chapter 4 planned versus actual inventory
+
+| Chapter | Basic `Q:/A:` | Cloze `C:` | Problem `P:/S:` | Figures | Reconciliation |
+|---|---:|---:|---:|---:|---|
+| 4 planned | 14 | 1 | 4 | 3 front figures, TikZ + SVG | baseline for the chapter-4 isolated build |
+| 4 actual | 14 | 1 | 4 | 3 front figures, TikZ + SVG | matched; validator total 35 deck cards = 16 (ch3) + 19 (ch4), no unexplained omission |
