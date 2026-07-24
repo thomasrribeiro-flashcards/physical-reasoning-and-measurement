@@ -351,3 +351,61 @@ method execution.
 |---|---:|---:|---:|---:|---|
 | 4 planned | 14 | 1 | 4 | 3 front figures, TikZ + SVG | baseline for the chapter-4 isolated build |
 | 4 actual | 14 | 1 | 4 | 3 front figures, TikZ + SVG | matched; validator total 35 deck cards = 16 (ch3) + 19 (ch4), no unexplained omission |
+
+## Chapter 5 design ledger (tables, graphs, and data patterns)
+
+Allowed inbound frontier: Chapter 4 scheduled cards (repeat variation, dot
+plots, mistakes and exclusion-needs-cause, mean, reading range, uncertainty
+intervals, ±, resolution floor, random/systematic error, agreement, purpose),
+capability summaries for Chapters 1–3 (system/quantity/value/measurement/
+measurand/model terms; SI, symbols, prefixes, conversion, notation; procedure,
+scale division, resolution, false precision, instrument choice), IPEE headings
+from the scheduled arithmetic problem cards, and the scheduled external closure
+(number lines, decimals, subtraction/halving, averaging arithmetic, mL/g/cm
+units, reasonableness checks). Two-axis graph grammar is *not* inbound — the
+Chapter 4 dot plot used a single number line — so axes are taught here from the
+inbound number line. Proportionality language waits for Chapter 6; only
+"steady rise / equal steps" wording is used.
+
+| Target | Form | Ledger note |
+|---|---|---|
+| Table grammar: column = quantity, header carries the unit once | `Q:/A:` 05-01 | bridges from quantity-value (number × unit) |
+| Independent versus dependent quantity | `Q:/A:` 05-02 | who-fixes-the-value test; coin/balance context |
+| Successive differences expose a pattern in a table | `Q:/A:` 05-03 | markdown table on the front; repeat variation explains wobble |
+| Graph axes, axis roles, data point | `Q:/A:` 05-04 | axes bridged as two number lines; convention supported |
+| Read a marked point against both axis scales | `Q:/A:` 05-05 | figure card; reuses ch3 scale-division skill |
+| Axis scale must be a true number line | `Q:/A:` 05-06 | uneven-label diagnosis (0,5,10,20,40) |
+| Trend despite scatter | `Q:/A:` 05-07 | figure card; collective behavior versus single points |
+| Trend line versus dot-to-dot joining | `Q:/A:` 05-08 | figure card (two treatments); links to mean logic |
+| Anomalous point handling | `Q:/A:` 05-09 | extends ch4 exclusion-needs-cause to graphs |
+| Interpolation with an honest "about" | `Q:/A:` 05-10 | midway reading between 2 and 4 coins |
+| Extrapolation and its weakening support | `Q:/A:` 05-11 | plant-growth contrast; bounded-conclusion echo |
+| Axis-start artifact: read scale, not steepness | `Q:/A:` 05-12 | figure card (same data, two axes) |
+| Table versus graph display choice | `Q:/A:` 05-13 | method-choice target |
+| Analyzed table-pattern + interpolation | `P:/S:` 05-14 | full IPEE on the water-depth table |
+| Faded graph interpolation | `P:/S:` 05-15 | thin support in all four stages; per-coin check |
+| Independent mixed display audit | `P:/S:` 05-16 | four flaws: scale, dot-to-dot, chased anomaly, certain extrapolation |
+
+Cloze count is zero by design (as planned): every target is a discrimination,
+diagnosis, prediction, or method execution; no compact token merits exact
+recall. Problem progression: analyzed (05-14) → faded (05-15) → independent
+mixed audit (05-16), preceded by supported single-step retrievals.
+
+### Chapter 5 figure opportunity inventory
+
+| Opportunity | Decision | Retrieval role or reason |
+|---|---|---|
+| Coin-mass scatter graph with one circled point and guides | Include: `coin-mass-graph` (fronts of 05-05, 05-07, 05-15) | reading a point against two scales and judging a trend are spatial tasks; a printed table would delete them |
+| Same points joined dot-to-dot versus one trend line | Include: `line-treatments` (front of 05-08) | the choice between treatments must be inspected; prose would state the difference it means to test |
+| Same four readings on a 0-based and a zoomed axis | Include: `axis-start-comparison` (front of 05-12) | the conflicting visual impressions are the phenomenon under audit |
+| Flawed graph with uneven scale, dot-to-dot line, chased anomaly | Include: `flawed-graph` (front of 05-16) | the audit requires spotting flaws in an actual drawn display, not a described one |
+| Empty labeled axes as a plotting scaffold | Omit | plotting-by-hand belongs to notebook practice; the scheduling decision (axis roles) is 05-04's verbal target |
+| Interpolation zoom-in construction | Omit | the midway reading is arithmetic once the trend is trusted; a construction drawing would restate the answer |
+| Residual-style difference plot | Omit | planned early as "residual-like"; successive differences in the 05-03/05-14 tables carry the same decision at novice depth without new graph grammar |
+
+### Chapter 5 planned versus actual inventory
+
+| Chapter | Basic `Q:/A:` | Cloze `C:` | Problem `P:/S:` | Figures | Reconciliation |
+|---|---:|---:|---:|---:|---|
+| 5 planned | 13 | 0 | 3 | 4 front figures, TikZ + SVG | baseline for the chapter-5 isolated build |
+| 5 actual | 13 | 0 | 3 | 4 front figures, TikZ + SVG | matched; validator total 35 deck cards = 19 (ch4) + 16 (ch5); no unexplained omission |
