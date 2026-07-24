@@ -235,3 +235,58 @@ Before handoff:
 5. Reconcile planned and actual card, problem, and figure inventories.
 6. Run `git diff --check` and review the complete diff.
 7. Stop for explicit pilot approval; do not author Chapters 2–10.
+
+## Chapter 3 design ledger (measurement procedures and resolution)
+
+Allowed inbound frontier: Chapter 1 capability summary (system, quantity,
+value, measurement, measurand, instrument, model terms), Chapter 2 scheduled
+cards (SI, symbols, prefixes, notation, ladder conversion, IPEE), the scheduled
+arithmetic closure (scale reading, precision claims of the last written place,
+rounded-value intervals, conversion, mL/g/cm benchmarks), and the algebra
+capability summary. Uncertainty vocabulary (intervals on results, mistakes
+versus variation, repeated readings) is deliberately reserved for Chapter 4.
+
+Retrieval targets mapped to card forms:
+
+| Target | Form | Ledger note |
+|---|---|---|
+| Procedure versus measurand: what the how-recipe fixes | `Q:/A:` 03-01 | bridges from the inbound measurand capability |
+| Recognizing a procedure; repeatability test | `Q:/A:` 03-02 | discrimination between vague and complete instructions |
+| Scale division and division-size computation | `Q:/A:` 03-03 | re-grounds inbound scale grammar, adds the anchors-plus-steps rule |
+| Two-reading (subtract) method | `Q:/A:` 03-04 | supported inference 9.5 − 3.0; feeds zero error and P1 |
+| Zero error direction, size, and fix | `Q:/A:` 03-05 | broken-tip ruler prediction |
+| Parallax: correct eye position and shift direction | `Q:/A:` 03-06 | figure card; geometry traced, not stated |
+| Resolution definition; coarse versus fine ruler | `Q:/A:` 03-07 | honest claim: sub-division differences show unreliably, not never |
+| Digital display steps and digital resolution | `Q:/A:` 03-08 | bridges "balance"; sub-step change usually invisible |
+| Digital-exactness misconception | `Q:/A:` 03-09 | contrast after both members established |
+| Record-to-resolution rule (34 vs 34.0 vs 34.00 mm) | `Q:/A:` 03-10 | extends inbound precision-claim card into procedure language |
+| False precision from computation | `Q:/A:` 03-11 | 100 ÷ 3 shelves; echoes inbound conversion-adds-no-knowledge idea |
+| Range; single-placement instrument choice | `Q:/A:` 03-12 | ruler-versus-tape method choice |
+| Resolution matched to purpose | `Q:/A:` 03-13 | flour versus sub-gram tablet |
+| Read-and-record with the two-reading method | `P:/S:` 03-14 | analyzed full IPEE on the ruler figure |
+| Scale reading with division-size resolution | `P:/S:` 03-15 | faded IPEE (all headings, thin support) on the volume figure |
+| Mixed procedure audit: zero error + parallax + false precision | `P:/S:` 03-16 | independent diagnosis integrating the chapter |
+
+Cloze count is zero by design: every target here is a discrimination,
+prediction, diagnosis, or method execution; no compact token merits exact
+recall. Problem progression: analyzed (03-14) → faded (03-15) → independent
+mixed (03-16), with supported single-step retrievals (03-03 through 03-06)
+preceding them.
+
+### Chapter 3 figure opportunity inventory
+
+| Opportunity | Decision | Retrieval role or reason |
+|---|---|---|
+| Rod mid-scale on a millimeter ruler | Include: `ruler-offset-reading` (front of 03-14) | Learner must read both ends against real divisions and subtract; text would supply the readings and delete the task. |
+| Pointer sighted from three eye positions | Include: `parallax-views` (front of 03-06) | The shift direction must be traced along drawn sight lines; this spatial inference is the retrieval target. |
+| Liquid level against a labeled mL scale | Include: `volume-scale-reading` (front of 03-15) | Division-size computation plus counted-step reading on an authentic vertical scale; distinct from the ruler task. |
+| Digital display drawing | Omit | A digital indication is purely textual (12.47 g); a drawing adds no spatial decision beyond the prose. |
+| Apparatus schematic of the window/tape scenario | Omit | The audit target is procedural, not spatial; a drawing would either leak the errors or decorate. |
+| Worn-ruler-tip close-up | Omit | The 0.2 cm shift is fully specified in prose; the prediction is arithmetic, not visual. |
+
+### Chapter 3 planned versus actual inventory
+
+| Chapter | Basic `Q:/A:` | Cloze `C:` | Problem `P:/S:` | Figures | Reconciliation |
+|---|---:|---:|---:|---:|---|
+| 3 planned | 13 | 0 | 3 | 3 front figures, TikZ + SVG | baseline for the chapter-3 isolated build |
+| 3 actual | 13 | 0 | 3 | 3 front figures, TikZ + SVG | matched; no unexplained omission |
