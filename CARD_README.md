@@ -467,3 +467,66 @@ single-step retrievals.
 |---|---:|---:|---:|---:|---|
 | 6 planned | 12 | 1 | 3 | 3 front figures, TikZ + SVG (≤4 allowed) | baseline for the chapter-6 isolated build |
 | 6 actual | 12 | 1 | 3 | 3 front figures, TikZ + SVG | matched; 16 new cards; double-number-line figure intentionally omitted |
+
+## Chapter 7 design ledger (dimensions and derived quantities)
+
+Allowed inbound frontier: Chapter 6 scheduled cards (direct/inverse
+proportion, constant of proportionality, y = kx, substitution prediction,
+scale factor, constant-product test, per-unit values spelled out in words),
+capability summaries for Chapters 1–5 (quantity-value terms, measurand,
+SI units and conversion, resolution, mean and uncertainty, tables and
+graphs), and the external arithmetic and algebra closures (ratio, rate,
+unit rate, fractions and decimals, whole-number powers, array
+representation, variable, equation, substitution). Symbolic slash
+notation (mL/s) is introduced here, as reserved by the Chapter 6 ledger.
+Area and volume units are *not* inbound (no geometry deck edge); cm² and
+cm³ are built from unit-square and unit-cube counting bridged from
+array representation and whole-number powers. "Dimension" is explicitly
+disambiguated from Chapter 1's drawing-dimension arrows. Density is
+in scope (not on the exclusion list); force, energy, and motion
+vocabulary stay out.
+
+| Target | Form | Ledger note |
+|---|---|---|
+| Derived quantity; mL/s slash notation | `Q:/A:` 07-01 | 90 mL in 30 s → 3 mL/s; first symbolic per-unit unit |
+| Unit cancellation in rate × time | `Q:/A:` 07-02 | 3 mL/s × 40 s → 120 mL; s cancels |
+| Unit of a proportionality constant | `Q:/A:` 07-03 | d = kV → cm/mL; bare counts carry no unit (m = 5.2 n) |
+| Density as a derived quantity | `Q:/A:` 07-04 | mass ÷ volume; water about 1.0 g/mL |
+| Area unit cm² from unit-square counting | `Q:/A:` 07-05 | figure card; 4 cm × 3 cm tile → 12 cm² |
+| Volume unit cm³ from unit-cube layers | `Q:/A:` 07-06 | figure card; 4 × 3 × 2 → 24 cm³ |
+| 1 mL = 1 cm³ exact link | `Q:/A:` 07-07 | 250 mL carton → 250 cm³ |
+| Exact form 1 cm³ = 1 mL | `C:` 07-08 | one deletion, after 07-07 establishes the link |
+| Squared conversion factor 1 m² = 10 000 cm² | `Q:/A:` 07-09 | figure card; (100 cm)² reasoning against the ×100 trap |
+| Dimension as kind of quantity | `Q:/A:` 07-10 | 3 m = 300 cm reachable, 3 m² not; disambiguates drawing "dimensions" |
+| Same-dimension addition rule | `Q:/A:` 07-11 | 1.2 m + 30 cm fixable; 5 g + 20 mL meaningless; division fine |
+| Same unit, different quantity | `Q:/A:` 07-12 | ruler resolution 1 mm versus seed length 1 mm; measurand |
+| Unit check rejects a wrong equation | `Q:/A:` 07-13 | t = V × r gives mL²/s, not s; repair V ÷ r |
+| Unit check can only reject, never confirm | `Q:/A:` 07-14 | t = V/r and t = 2V/r both pass the check |
+| Analyzed two-reading density determination | `P:/S:` 07-15 | full IPEE; 176 g − 84 g over 100 mL → 0.92 g/mL, not water |
+| Faded rate-time prediction with unit conversion | `P:/S:` 07-16 | 2.5 mL/min for 1.5 h → 225 mL; h → min inside the chain |
+| Independent equation screening by units | `P:/S:` 07-17 | three candidates, only t = V ÷ r survives; ch6 600 mL data as support |
+| Mixed false-positive claim check | `P:/S:` 07-18 | unit-rejected pure number, surviving cm/mL, and a dimensionally clean formula that fails the data |
+
+Cloze count is one by design: 1 cm³ = 1 mL is the chapter's only compact
+exact-recall token; every other target is a construction, discrimination,
+diagnosis, or method execution. Problem progression: analyzed (07-15) →
+faded (07-16) → independent (07-17) → mixed false-positive (07-18),
+with 07-18 enforcing the check-rejects-but-never-confirms limit on data.
+
+### Chapter 7 figure opportunity inventory
+
+| Opportunity | Decision | Retrieval role or reason |
+|---|---|---|
+| Rectangle tiled by unit squares with a shaded corner square | Include: `area-unit-squares` (front of 07-05) | counting squares to build cm² is spatial; the shaded 1 cm × 1 cm anchor is the point of the card |
+| Oblique box packed with unit cubes, one shaded | Include: `volume-unit-cubes` (front of 07-06) | layer structure (4 × 3 per layer, 2 layers) must be seen, not asserted |
+| Square meter with an exaggerated 1 cm square in one corner | Include: `square-meter-grid` (front of 07-09) | the 100 × 100 mismatch of scale is the visual argument against the ×100 trap |
+| Unit-cancellation map with struck-through units | Omit | cancellation is typographic; KaTeX strike-through in the answer carries it without an image |
+| Dimension tree (length/volume/time/mass) | Omit | classification is verbal; a tree would state the answer on the front |
+| Competing candidate equations laid out side by side | Omit | plain text in the P: block is the working format the learner will actually face |
+
+### Chapter 7 planned versus actual inventory
+
+| Chapter | Basic `Q:/A:` | Cloze `C:` | Problem `P:/S:` | Figures | Reconciliation |
+|---|---:|---:|---:|---:|---|
+| 7 planned | 13 | 1 | 4 | 3 front figures, TikZ + SVG (≤4 allowed) | baseline for the chapter-7 isolated build |
+| 7 actual | 13 | 1 | 4 | 3 front figures, TikZ + SVG | matched; 18 new cards; cancellation-map, dimension-tree, and equation-layout figures intentionally omitted |
